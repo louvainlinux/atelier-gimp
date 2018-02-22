@@ -9,6 +9,8 @@
 \usepackage{epstopdf}
 \usepackage{xspace}
 
+\usepackage[colorinlistoftodos]{todonotes}%disable=true
+
 \newcommand{\badet}{et}
 \newcommand{\goodet}{\mathbin{\mathrm{et}}}
 \DeclareMathOperator{\sumN}{\sum_{i=1}^n}
@@ -23,7 +25,7 @@
 \makeatother
 \setbeamerfont{subsection in toc}{size=\scriptsize}
 
-\graphicspath{{img/}}
+\graphicspath{{Images/}}
 \definecolor{gris}{RGB}{228,228,228}
 \definecolor{bleu}{RGB}{34,148,255}
 \definecolor{darkgray}{rgb}{0.3,0.3,0.3}
@@ -51,41 +53,177 @@
 \institute{Louvain-li-Nux}
 \title{\textbf{Formation GIMP}\\
 Introduction au montage photo avec GIMP}
-\author{Sébastien \textsc{de Longueville} \and Laurent \textsc{Ziegler}}
+\author{Adrien \textsc{Couplet} \and Sébastien \textsc{de Longueville} \and \\ Laurent \textsc{Ziegler}}
 
 \date{5 avril 2018}
 
 
 \begin{document}
 
+\begin{frame}
+	\maketitle
+\end{frame}
+
+\begin{frame}
+	A
+	
+	%\listoftodos
+\end{frame}
 
 \begin{frame}
   \begin{center}\Large
   Suivez cette présentation sur votre ordinateur :-)
   
   \vspace{1cm}
-  \fbox{\url{https://louvainlinux.org/activites/atelier-latex}}
+  \fbox{\url{https://louvainlinux.org/activites/atelier-gimp}}
   \end{center}
 \end{frame}
 
-\title{{Validation and Control of a reduced scaled Narrow Tilting Vehicle}}
-
-\subtitle{{\scriptsize Intermediate presentation}}
-
-\author[MEMO2990]{Sébastien de Longueville}
-\date{December 18, 2017}
-
-\institute
-{
-  École Polytechnique de Louvain\\
-  Université Catholique de Louvain
-}
-
-
-\begin{document}
-
 \begin{frame}
-	Energie
+	Installation
+	
+	\begin{itemize}
+	\item Windows
+	
+	\fbox{\url{https://www.gimp.org/downloads/}}
+	
+	\item Linux
+	
+	%\begin{lstlisting}[language=bash]
+  	%$ sudo apt install gimp
+	%\end{lstlisting}
+	
+	\item MAC OS X
+	
+	\fbox{\url{https://www.gimp.org/downloads/}}
+		
+	\end{itemize}
 \end{frame}
 
+\begin{frame}
+	Le libre rapidement 
+	
+	Permet de faire plein de choses cool (et rapides)
+	
+	Adacity,...
+\end{frame}
+
+\begin{frame}
+	
+	\begin{enumerate}
+	\item Ouvrir une image : File/open ==> choisir l'image à ouvrir 
+	
+	Ou ... plus simple : faire glisser l'image sur l'environnement de travail
+	
+	\item Créer un nouveau projet ==> format .xcf
+	
+	\item Pour obtenier une image en format "commun" ==> File/Export as ==> choisir le nom de fichier et l'extension (.png, .jpeg, .pdf, .text, .gif, .ps, .psd(compatibilité photoshop),...)
+	\end{enumerate}
+\end{frame}
+
+\begin{frame}
+	Description rapide des fenêtres 
+	\begin{enumerate}
+	\item Menu
+	\item Fenêtre d'outils 
+	\item Fenêtre de calques 
+	
+	\end{enumerate}
+	Environement ouvert (échelles, zone de travail)
+\end{frame}
+
+\begin{frame}
+	Outils : description générale
+	
+	Ctrl + B pour l'ouvrir (ou windows/Toolboxes)
+	
+	\begin{enumerate}
+	\item Double clique pour les paramètres
+	\end{enumerate} 
+\end{frame}
+
+\begin{frame}
+	Outils : description par outil
+	
+	+ Raccourcis de l'outil
+	
+	+ Paramètres les plus courraments utilisés
+\end{frame}
+
+\begin{frame}
+	Crayon
+	
+	Majuscule maintenue + Clique ==> tracer une ligne droite 
+\end{frame}
+
+\begin{frame}
+	Layer manager 
+	
+	Ctrl + L (ou windows/Layers) pour l'ouvrir
+	
+	$\Rightarrow$ pour masquer, superposer, mettre à l'avant plan,... 
+	 
+	\begin{itemize}
+		\item Calque (tel quel)
+		\item Texte 
+		%\item Filtre (déconseillé)
+	\end{itemize}
+	
+	Attention : modifications QUE sur les layers sélectionnés 
+	
+	+ Masque (= ...) 
+	\todo[inline]{exemple photo (layes cachés,...)}	 
+\end{frame}
+
+\begin{frame}
+	Selection editor (All, shrink, grow, invert,...)
+	
+	$\Rightarrow$ Clique droit/	Select/All,Invert,None,...
+\end{frame}
+
+\begin{frame}
+	Canaux (alpha et différentes couleurs)
+	
+	Canal alpha = ??
+	
+	Opérations sur les couleurs (mentionner rapidement : niveaux, balances, seuils, saturation,...)
+\end{frame}
+
+\begin{frame}
+	Filtres et effets (ombres sous le texte,...)
+\end{frame}
+
+\begin{frame}
+	\todo[inline]{Exercices : .text, contourner automatiquement, texte "3D"}
+\end{frame}
+
+\appendix 
+
+\begin{frame}
+	Récapitulatif des raccourcis 
+	\begin{itemize}
+	%todo A CLASSER (ex: view, selection, tools, ...)
+	\item Ctrl + B
+	\item Ctrl + L
+	\item Raccourcis classiques (Ctrl + A (tout sélectionner), MAJ + Ctrl + A (tout déselectionner), Ctrl + C, Ctrl + V, Ctrl + I (inverser la sélection)...)
+	\item +
+	\item -
+	\item 1,2,3,4,5, MAJ + 2, MAJ + 3, MAJ + 4, MAJ + 5  
+	\item R = rectangle 
+	\item E = ellipse 
+	\item F = free select
+	\item Ctrl appuyé = sélection de couleur
+	\end{itemize}
+	
+	\url{http://www.gimpusers.com/gimp/hotkeys}
+\end{frame}
+
+\begin{frame}
+	Tutoriels gimp bien foutus
+	\url{https://docs.gimp.org/fr/}
+\end{frame}
+
+\begin{frame}
+	G'MIC
+\end{frame}
 \end{document}
