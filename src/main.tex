@@ -8,6 +8,8 @@
 \usepackage{mdframed}
 \usepackage{epstopdf}
 \usepackage{xspace}
+\usepackage{caption}
+\captionsetup[figure]{labelformat=empty}
 
 \usepackage[colorinlistoftodos]{todonotes}%disable=true
 
@@ -47,12 +49,6 @@ Introduction au montage photo avec GIMP}
 \end{frame}
 
 \begin{frame}
-	A
-	
-	%\listoftodos
-\end{frame}
-
-\begin{frame}
   \begin{center}\Large
   Suivez cette présentation sur votre ordinateur :-)
   
@@ -60,6 +56,61 @@ Introduction au montage photo avec GIMP}
   \fbox{\url{https://louvainlinux.org/activites/atelier-gimp}}
   \end{center}
 \end{frame}
+
+\section{Introduction}
+\begin{frame}[allowframebreaks]{Qu'est-ce que GIMP ?}
+    \begin{itemize}
+        \item GIMP = GNU Image Manipulation Program
+        \item Logiciel de traitement d'images bitmap.
+        \item Alternative gratuite et libre à Adobe Photoshop
+    \end{itemize}
+    \begin{figure}
+        \centering
+        \includegraphics[width=0.5\textwidth]{Images/gimp-logo.png}
+        \caption{Wilber, la mascotte officielle de GIMP} 
+    \end{figure}
+    \framebreak
+    Liste non exhaustive des fonctionnalités de GIMP
+    \begin{itemize}
+        \item Gestion des calques;
+        \item Plusieurs outils de dessin;
+        \item Plusieurs outils de sélection;
+        \item Outils de transformation;
+        \item Une sélection de filtres;
+        \item Gestion de nombreux formats (JPEG, GIF, PNG, PSD, TIFF);
+        \item ...
+    \end{itemize}
+\end{frame}
+
+\begin{frame}{Installation}
+    \begin{center}
+    GIMP est disponible pour Windows, Linux et macOS
+    \vspace{1cm}\Large
+    \fbox{\url{https://www.gimp.org/downloads/}}
+    \end{center}
+\end{frame}
+
+\section{Présentation de l'interface et des outils}
+\begin{frame}[allowframebreaks]{L'interface}
+    \begin{figure}
+        \centering
+        \includegraphics[width=0.9\textwidth]{Images/gimp_multiple_windows.png}
+        \caption{L'interface multi-fenêtres}
+    \end{figure} 
+    \framebreak
+    \begin{center}
+        Fenêtres > Mode fenêtre unique
+        \begin{figure}
+            \includegraphics[width=0.9\textwidth]{Images/gimp_single_window.png}
+            \caption{L'interface fenêtre unique}
+        \end{figure}
+    \end{center}
+
+    
+\end{frame}
+
+
+
 
 \begin{frame}
 	Installation
