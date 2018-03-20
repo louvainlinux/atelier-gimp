@@ -9,6 +9,7 @@
 \usepackage{epstopdf}
 \usepackage{xspace}
 \usepackage{caption}
+\usepackage{menukeys}
 \captionsetup[figure]{labelformat=empty}
 
 \usepackage[colorinlistoftodos]{todonotes}%disable=true
@@ -105,8 +106,53 @@ Introduction au montage photo avec GIMP}
             \caption{L'interface fenêtre unique}
         \end{figure}
     \end{center}
+\end{frame}
 
-    
+\begin{frame}{Créer/importer une image}
+	\begin{itemize}
+		\item Pour \textbf{créer} une image: Fichier > Nouvelle image ou \keys{\ctrl + N}
+			\begin{itemize}
+				\item Sélectionnez un modèle (A3, A4, A5...) ou spécifier manuellement les dimensions (en pixels, mm, cm...).
+			\end{itemize}
+		\item Pour \textbf{importer} une image: Fichier  > Ouvrir ou \keys{\ctrl + O}.
+			\begin{itemize}
+				\item GIMP supporte de nombreux formats: PNG, JPEG, GIF...
+			\end{itemize}
+		\item Pour \textbf{créer} depuis le presse-papiers (copier/coller): Créer > Depuis le presse-papiers ou \keys{\shift + \ctrl + V}
+	\end{itemize}
+	\begin{center}
+		\includegraphics[width=0.5\textwidth]{Images/new_image.png}
+	\end{center}
+\end{frame}
+
+\begin{frame}{Une image c'est quoi ?}
+	\begin{center} 
+		\textbf{Image matricielle} $\leftrightarrow$ Image vectorielle 
+		\includegraphics[width=0.6\textwidth]{Images/mat_vs_vec.png}
+	\end{center}
+	Pourquoi on utilise pas toujours des images vectorielles ? 
+	\begin{itemize}
+		\item les images vectorielles ne peuvent afficher que des images construites à l'aide de formes. Les images matricielles ont l'avantage d'être définies au pixel près.
+	\end{itemize}
+\end{frame}
+
+\begin{frame}{Les formats}
+	Stocker chaque pixel demande beaucoup de mémoire. Solution ? Compresser les images:
+	\begin{itemize}
+		\item compression sans pertes (PNG, GIF);
+		\item compression avec pertes (JPEG).
+	\end{itemize}
+	Les trois principaux formats d'images sont
+	\begin{itemize}
+		\item \textbf{JPEG}: léger (mais avec pertes), idéal pour les photos;
+		\item \textbf{PNG}: plus lourd que JPEG (mais sans pertes), très bon support de la transparence;
+		\item \textbf{GIF}: support des animations, limité à 256 couleurs.
+	\end{itemize}
+	Un projet GIMP sera sauvegardé au format \textbf{XCF}, un format d'image libre qui contiendra les différents calques et paramètres de votre création.
+\end{frame}
+
+\begin{frame}{Enregistrement et exportation}
+
 \end{frame}
 
 
