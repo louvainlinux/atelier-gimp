@@ -151,10 +151,64 @@ Introduction au montage photo avec GIMP}
 		\item \textbf{GIF}: support des animations, limité à 256 couleurs.
 	\end{itemize}
 	Un projet GIMP sera sauvegardé au format \textbf{XCF}, un format d'image libre qui contiendra les différents calques et paramètres de votre création.
+	
+	L'équivalent d'Adobe Photoshop est le format \textbf{PSD}.
 \end{frame}
 
 \begin{frame}{Enregistrement et exportation}
+	\begin{itemize}
+		\item Pour \textbf{enregistrer} au format \textbf{XCF}: Fichier > Enregistrer ou \keys{\ctrl + S}.
+		\item Pour \textbf{exporter} votre image dans un autre format: Fichier > Exporter ou \keys{\shift + \ctrl + E}.
+	\end{itemize}
+	\begin{center}
+		\includegraphics[width=0.5\textwidth]{Images/export.png}
+	\end{center}
+\end{frame}
 
+\begin{frame}{Les couleurs}
+	Il est possible de gérer 2 couleurs: les couleurs de premier et d'arrière-plan:
+	\begin{center}
+		\includegraphics[width=0.08\textwidth]{Images/color_primary.png}
+	\end{center}
+	Il suffit de cliquer sur une de ces couleurs pour la modifier:
+	\begin{center}
+		\includegraphics[width=0.5\textwidth]{Images/color_selector.png}
+	\end{center}
+	Il est possible de sélectionner une couleur ou de rentrer ses valeurs RGB. Une fois votre couleur choisie, vous pouvez l'ajouter à votre palette.
+\end{frame}
+
+\begin{frame}[allowframebreaks]{Les outils de coloration}
+	La \textbf{pipette} permet de récupérer la couleur d'un pixel d'une image en cliquant sur le pixel en question.
+	\begin{center}
+		\includegraphics[width=0.05\textwidth]{Images/color_tool_0.png}
+		\includegraphics[width=0.3\textwidth]{Images/color_tool_0_settings.png}
+	\end{center}
+	L'outil permet de définir la couleur de premier plan, la couleur d'arrière-plan ou simplement d'ajouter la couleur à la palette.
+	
+	\framebreak
+	Le \textbf{pot de peinture} permet de remplir une zone.
+	\begin{center}
+		\includegraphics[width=0.05\textwidth]{Images/color_tool_1.png}
+		\includegraphics[width=0.25\textwidth]{Images/color_tool_1_settings.png}
+	\end{center}
+	Le seuil permet d'ajuster la zone à remplir: 
+	\begin{center}
+		\includegraphics[width=0.3\textwidth]{Images/color_tool_1_test0.png}
+		\includegraphics[width=0.3\textwidth]{Images/color_tool_1_test1.png}
+		\includegraphics[width=0.3\textwidth]{Images/color_tool_1_test2.png}
+	\end{center}
+	\begin{scriptsize}
+	Exemple: image originale, remplissage noir avec seuil à 30, remplissage noir avec seuil à 60.
+	\end{scriptsize}
+	
+	\framebreak
+	L'outil de gradient permet de créer des dégradés entre la couleur de premier plan et celle d'arrière-plan.
+	\begin{center}
+		\includegraphics[width=0.05\textwidth]{Images/color_tool_2.png}
+		\includegraphics[width=0.3\textwidth]{Images/color_tool_2_settings.png}
+	\end{center}
+	Il existe de nombreux modes et de nombreuses formes, n'hésitez pas à les essayer pour les découvrir. 
+	
 \end{frame}
 
 \begin{frame}[allowframebreaks]{Les outils}
