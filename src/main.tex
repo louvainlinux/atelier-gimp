@@ -9,7 +9,9 @@
 \usepackage{epstopdf}
 \usepackage{xspace}
 \usepackage{caption}
+\usepackage{subcaption}
 \usepackage{menukeys}
+\usepackage{comment}
 \captionsetup[figure]{labelformat=empty}
 
 \usepackage[colorinlistoftodos]{todonotes}%disable=true
@@ -36,7 +38,7 @@
 \definecolor{darkgray}{rgb}{0.3,0.3,0.3}
 \usefonttheme[onlymath]{serif} % to see the difference when I do mathsf
 
-\logo{\includegraphics[height=5mm]{Images/logo_12-13-mini.png}}
+\logo{\includegraphics[height=5mm]{Images/logo_12-13-mini}}
 \institute{Louvain-li-Nux}
 \title{\textbf{Formation GIMP}\\
 Introduction au montage photo avec GIMP}
@@ -69,7 +71,7 @@ Introduction au montage photo avec GIMP}
     \end{itemize}
     \begin{figure}
         \centering
-        \includegraphics[width=0.5\textwidth]{Images/gimp-logo.png}
+        \includegraphics[width=0.5\textwidth]{Images/gimp-logo}
         \caption{Wilber, la mascotte officielle de GIMP} 
     \end{figure}
     \framebreak
@@ -97,14 +99,14 @@ Introduction au montage photo avec GIMP}
 \begin{frame}[allowframebreaks]{L'interface}
     \begin{figure}
         \centering
-        \includegraphics[width=0.9\textwidth]{Images/gimp_multiple_windows.png}
+        \includegraphics[width=0.9\textwidth]{Images/gimp_multiple_windows}
         \caption{L'interface multi-fenêtres}
     \end{figure} 
     \framebreak
     \begin{center}
         Fenêtres > Mode fenêtre unique
         \begin{figure}
-            \includegraphics[width=0.9\textwidth]{Images/gimp_single_window.png}
+            \includegraphics[width=0.9\textwidth]{Images/gimp_single_window}
             \caption{L'interface fenêtre unique}
         \end{figure}
     \end{center}
@@ -130,7 +132,7 @@ Introduction au montage photo avec GIMP}
 \begin{frame}{Une image c'est quoi ?}
 	\begin{center} 
 		\textbf{Image matricielle} $\leftrightarrow$ Image vectorielle 
-		\includegraphics[width=0.6\textwidth]{Images/mat_vs_vec.png}
+		\includegraphics[width=0.6\textwidth]{Images/mat_vs_vec}
 	\end{center}
 	Pourquoi on utilise pas toujours des images vectorielles ? 
 	\begin{itemize}
@@ -161,18 +163,18 @@ Introduction au montage photo avec GIMP}
 		\item Pour \textbf{exporter} votre image dans un autre format: Fichier > Exporter ou \keys{\shift + \ctrl + E}.
 	\end{itemize}
 	\begin{center}
-		\includegraphics[width=0.5\textwidth]{Images/export.png}
+		\includegraphics[width=0.5\textwidth]{Images/export}
 	\end{center}
 \end{frame}
 
 \begin{frame}{Les couleurs}
 	Il est possible de gérer 2 couleurs: les couleurs de premier et d'arrière-plan:
 	\begin{center}
-		\includegraphics[width=0.08\textwidth]{Images/color_primary.png}
+		\includegraphics[width=0.08\textwidth]{Images/color_primary}
 	\end{center}
 	Il suffit de cliquer sur une de ces couleurs pour la modifier:
 	\begin{center}
-		\includegraphics[width=0.5\textwidth]{Images/color_selector.png}
+		\includegraphics[width=0.5\textwidth]{Images/color_selector}
 	\end{center}
 	Il est possible de sélectionner une couleur ou de rentrer ses valeurs RGB. Une fois votre couleur choisie, vous pouvez l'ajouter à votre palette.
 \end{frame}
@@ -180,22 +182,22 @@ Introduction au montage photo avec GIMP}
 \begin{frame}[allowframebreaks]{Les outils de coloration}
 	La \textbf{pipette} permet de récupérer la couleur d'un pixel d'une image en cliquant sur le pixel en question.
 	\begin{center}
-		\includegraphics[width=0.05\textwidth]{Images/color_tool_0.png}
-		\includegraphics[width=0.3\textwidth]{Images/color_tool_0_settings.png}
+		\includegraphics[width=0.05\textwidth]{Images/color_tool_0}
+		\includegraphics[width=0.3\textwidth]{Images/color_tool_0_settings}
 	\end{center}
 	L'outil permet de définir la couleur de premier plan, la couleur d'arrière-plan ou simplement d'ajouter la couleur à la palette.
 	
 	\framebreak
 	Le \textbf{pot de peinture} permet de remplir une zone.
 	\begin{center}
-		\includegraphics[width=0.05\textwidth]{Images/color_tool_1.png}
-		\includegraphics[width=0.25\textwidth]{Images/color_tool_1_settings.png}
+		\includegraphics[width=0.05\textwidth]{Images/color_tool_1}
+		\includegraphics[width=0.25\textwidth]{Images/color_tool_1_settings}
 	\end{center}
 	Le seuil permet d'ajuster la zone à remplir: 
 	\begin{center}
-		\includegraphics[width=0.3\textwidth]{Images/color_tool_1_test0.png}
-		\includegraphics[width=0.3\textwidth]{Images/color_tool_1_test1.png}
-		\includegraphics[width=0.3\textwidth]{Images/color_tool_1_test2.png}
+		\includegraphics[width=0.3\textwidth]{Images/color_tool_1_test0}
+		\includegraphics[width=0.3\textwidth]{Images/color_tool_1_test1}
+		\includegraphics[width=0.3\textwidth]{Images/color_tool_1_test2}
 	\end{center}
 	\begin{scriptsize}
 	Exemple: image originale, remplissage noir avec seuil à 30, remplissage noir avec seuil à 60.
@@ -204,8 +206,8 @@ Introduction au montage photo avec GIMP}
 	\framebreak
 	L'outil de gradient permet de créer des dégradés entre la couleur de premier plan et celle d'arrière-plan.
 	\begin{center}
-		\includegraphics[width=0.05\textwidth]{Images/color_tool_2.png}
-		\includegraphics[width=0.3\textwidth]{Images/color_tool_2_settings.png}
+		\includegraphics[width=0.05\textwidth]{Images/color_tool_2}
+		\includegraphics[width=0.3\textwidth]{Images/color_tool_2_settings}
 	\end{center}
 	Il existe de nombreux modes et de nombreuses formes, n'hésitez pas à les essayer pour les découvrir. 
 	
@@ -215,7 +217,7 @@ Introduction au montage photo avec GIMP}
 	
 	\begin{figure}
         	\centering
-        	\includegraphics[width=0.4\textwidth]{Images/gimp_toolbox.png}
+        	\includegraphics[width=0.4\textwidth]{Images/gimp_toolbox}
         	\caption{La boite à outils de GIMP} 
     	\end{figure}
 	
@@ -233,7 +235,7 @@ Introduction au montage photo avec GIMP}
 	\textbf{Paramètres} \textit{double} cliquer sur l'icone l'outil concerné
 	\begin{figure}
         	\centering
-        	\includegraphics[width=0.4\textwidth]{Images/option_outil.png}
+        	\includegraphics[width=0.4\textwidth]{Images/option_outil}
         	\caption{Exemple : paramètres de l'outil de sélection} 
     	\end{figure}
 
@@ -278,30 +280,33 @@ Introduction au montage photo avec GIMP}
 \begin{figure}
 	\centering
 	\begin{tikzpicture}[scale=0.7, transform shape]
-        \node[anchor=south west,inner sep=0] at (0.4,0) {\includegraphics[width=0.1\textwidth]{Images/gimp_couleurs_actives.png}};
+        \node[anchor=south west,inner sep=0] at (0.4,0) {\includegraphics[width=0.1\textwidth]{Images/gimp_couleurs_actives}};
         \onslide<2>{\draw[teal,ultra thick,rounded corners] (0.25,0.3) rectangle (1.5,1); 
         \node [anchor=center, teal] (note) at (0.7,1.4) {\Large Avant-plan \textcolor{black}{{\small (Clic \textbf{gauche})}}};}
 	\onslide<3>{\draw[red,ultra thick,rounded corners] (0.6,0) rectangle (1.55,0.7);
         \node [anchor=center, red] (Inner) at (0.7,-0.3) {\Large Arrière-plan \textcolor{black}{{\small (Clic \textbf{droit})}}};}
     	\end{tikzpicture} 
-	%\includegraphics[width=0.1\textwidth]{Images/gimp_couleurs_actives.png}
+	%\includegraphics[width=0.1\textwidth]{Images/gimp_couleurs_actives}
 \end{figure}
 
 \vspace{-0.6cm}
 \textbf{Palette des couleurs} Double clique sur l'une des couleurs actives
-\begin{figure}
-	\centering
-	\begin{tikzpicture}[scale=1, transform shape]
-        \node[anchor=south west,inner sep=0] at (0.4,0) {\includegraphics[width=0.4\textwidth]{Images/gimp_color_box.png}};
 
-        \onslide<4>{\draw[red,ultra thick,rounded corners] (4.2,1.2) rectangle (4.6,1.6); 
-        \node [anchor=center, red] (note) at (3.7,0.5) {\Large Sélection \\de couleur};}
-    	\end{tikzpicture} 
-	%\includegraphics[width=0.1\textwidth]{Images/gimp_couleurs_actives.png}
-\end{figure}
+
+%\begin{figure}
+%	\centering
+%	\begin{tikzpicture}[scale=1, transform shape]
+%        \node[anchor=south west,inner sep=0] at (0.4,0) {\includegraphics[width=0.4\textwidth]{Images/gimp_color_box}};
+%
+%        \onslide<4>{\draw[red,ultra thick,rounded corners] (4.2,1.2) rectangle (4.6,1.6); 
+%        \node [anchor=center, red] (note) at (3.7,0.5) {\Large Sélection \\de couleur};}
+%    \end{tikzpicture} 
+%	\includegraphics[width=0.1\textwidth]{Images/gimp_couleurs_actives}
+%\end{figure}
 \end{overprint}
 
 \end{frame}
+
 \begin{frame}{Les outils de colloration}
 \begin{minipage}[t]{0.49\textwidth}
 	\textbf{Code HTML}
@@ -358,7 +363,7 @@ Introduction au montage photo avec GIMP}
 \begin{frame}[allowframebreaks]{Les calques}
 	\begin{figure}
         	\centering
-        	\includegraphics[width=0.3\textwidth]{Images/gimp_calques.png}
+        	\includegraphics[width=0.3\textwidth]{Images/gimp_calques}
         	%\caption{Fenêtre de calques de GIMP} 
     	\end{figure}
     	
@@ -380,15 +385,219 @@ Introduction au montage photo avec GIMP}
 		\item Indépendant
 	\end{itemize}	
 	
-	\begin{ennumerate}
+	\begin{enumerate}
 		\item Chaque calque s'utilises \textbf{Indépendemment}
-	\end{ennumerate}
+	\end{enumerate}
 
 \end{frame}
 
 \begin{frame}
 	\todo[inline]{Exercices : .text, contourner automatiquement, texte "3D"}
 \end{frame}
+
+%%% MASQUES de FUSION%%
+\section{Masques de Fusion}
+	\begin{frame}{Masques de Fusion}
+		Les masques de fusion permettent de cacher une certaine partie d'un calque.
+		$\Rightarrow$ Clic droit sur le calque $\rightarrow$ Add Layer Mask ...
+		
+		Conseil: Sélectionnez d'abord la zone à masquer.
+		\begin{center}
+			\begin{figure}		
+				\includegraphics[scale=.15]{Images/mask/mask1} 				
+			\end{figure}	
+		\end{center}
+	\end{frame}
+
+	\begin{frame}{Masques de Fusion}
+		Il suffit maintenant de dessiner en noir ou blanc sur le masque de fusion pour faire apparaitre (ou disparaitre) certaines zones du calque!
+		\begin{itemize}
+			\item Blanc $\Longrightarrow $ opaque
+			\item Noir $ \Longrightarrow $ transparent
+		\end{itemize}
+		\begin{center}
+			\begin{figure}
+				\includegraphics[scale=.15]{Images/mask/mask3}		
+			\end{figure}
+		\end{center}
+	\end{frame}
+	
+	\begin{frame}{Masques de Fusion}
+		\framesubtitle{Quel intérêt?}
+		Faire des montages! Vous pouvez maintenant rajouter un fond à votre motif prédécoupé et le bidouiller un peu pour que ça ne se voit pas! 
+		\begin{center}
+			\begin{figure}
+				\includegraphics[scale=.1]{Images/mask/Conference_Solvay}			
+				\caption{\scriptsize{1927 Solvay Conference on Quantum Mechanics. Photograph by Benjamin Couprie, Institut International de Physique Solvay, Brussels, Belgium}}
+				\end{figure}
+		\end{center}
+	\end{frame}
+
+%% PURGES STALINIENNES %%
+\section{Enlever un élément de l'image}
+	\begin{frame}{Enlever un élément de l'image}
+		Dupliquer le calque pour éviter d'endommager l'original et recouvrir la zone à éliminer avec le tampon de clonage
+		\begin{itemize}
+			\item Touche \textbf{C}
+			\item Touche \textbf{Ctrl} pour sélectionner la zone qui sera clonée
+		\end{itemize}
+		\begin{center}
+			\begin{figure}
+				\includegraphics[scale=.15]{Images/purge/purge3} 
+			\end{figure}
+		\end{center}				
+	\end{frame}
+
+	\begin{frame}{Enlever un élément de l'image}
+		Appliquer un masque le cas échéant et adoucir les contours avec l'outil correcteur (\textbf{B}). Changer de typer de masque de fusion peut aussi s'avérer utile.
+		\begin{center}
+			\begin{figure}
+				\includegraphics[scale=.15]{Images/purge/purge5} 
+			\end{figure}
+		\end{center}				
+	\end{frame}
+	
+	
+	\begin{frame}{Enlever un élément de l'image}
+
+		\begin{figure}[H]
+			\centering
+			\begin{minipage}{.5\textwidth}
+				\centering
+				\includegraphics[width=.5\linewidth, height=100px]{Images/purge/Apollo_15_flag,_rover,_LM,_Irwin}
+				\caption{Apollo 15 Lunar Module Pilot James Irwin salutes the U.S. flag.}
+			\end{minipage}%
+			\begin{minipage}{.5\textwidth}
+				\centering
+				\includegraphics[width=.5\linewidth, height=100px]{Images/purge/Apollo_15_flag,_rover,_LM}
+				\caption{Apollo 15 Lunar Module Pilot James Irwin does not salute the U.S. flag.}
+			\end{minipage}
+		\end{figure}
+
+	\end{frame}
+
+
+%% FILTRES %%
+\section{Filtres}
+	\begin{frame}{Filtres}
+		\begin{itemize}
+			\item S'appliquent sur un calque ou un masque
+			\item Gestion 
+				\begin{itemize}
+				\item du flou
+				\item des couleurs
+				\item "d'amélioration"
+				\item "artistiques"
+				\item etc
+				\end{itemize}
+			\item "Destructifs" et non modifiables par la suite $\rightarrow$ devrait changer avec GIMP 3.2
+		\end{itemize}
+	\end{frame}
+		
+	\begin{frame}{Filtres}
+		\framesubtitle{Et donc, Jamy, comment on applique un filtre?}		
+		Et bien c'est facile! Il suffit de: 
+		\begin{enumerate}
+			\item Dupliquer le calque sur lequel on va travailler
+			\item Masquer le nouveau calque afin que seule la zone qu'on souhaite modifier soit touchée par le filtre
+			\item Accéder aux filtres par le menu ou un clic droit
+			\item Jouer avec les réglages du filtres et l'appliquer sur le calque
+		\end{enumerate}
+
+		Conseil: si on se rend compte qu'on n'a pas appliqué les bonnes options au filtre; il n'est pas nécessaire de tout recommencer au début. Il suffit d'annuler ce qu'on vient de faire (Ctrl+Z ou "Edition $\rightarrow$ Annuler") et de réafficher le dernier (Maj+Ctrl+F ou "Filtres $\rightarrow$ Réafficher le dernier").		
+		
+	\end{frame}
+
+	\begin{frame}{Filtres}
+		\framesubtitle{Mais, à quoi ça sert Jamy?}
+		On peut par exemple appliquer un filtre de flou Gaussien à un masque, pour rendre son intégration à un montage plus discrète:
+		\begin{figure}[H]
+			\centering
+			\begin{minipage}{.5\textwidth}
+				\centering
+				\includegraphics[width=.5\linewidth, height=100px]{Images/filters/astronaut1} 
+				\caption{Sans filtre appliqué}
+			\end{minipage}%
+			\begin{minipage}{.5\textwidth}
+				\centering
+				\includegraphics[width=.5\linewidth, height=100px]{Images/filters/astronaut2} 
+				\caption{Après application du filtre}
+			\end{minipage}
+		\end{figure}		
+		
+		
+	\end{frame}
+
+	\begin{frame}{Filtres}
+		Il existe une foule d'autres filtres, certains aux effets relativement discrets ou plus "spectaculaires":
+		
+		\begin{figure}[H]
+			\centering
+			\begin{minipage}{.3\textwidth}
+				\centering
+				\includegraphics[width=1\linewidth]{Images/filters/motion_blur.JPG} 
+				\caption{motion blur}
+			\end{minipage}
+			\begin{minipage}{.3\textwidth}
+				\centering
+				\includegraphics[width=1\linewidth]{Images/filters/pixelize.JPG} 
+				\caption{pixelize}
+			\end{minipage}
+			\begin{minipage}{.3\textwidth}
+				\centering
+				\includegraphics[width=1\linewidth]{Images/filters/ripples.JPG} 
+				\caption{ripples}
+			\end{minipage}
+		\end{figure}
+			
+		\begin{figure}[H]
+			\centering
+			\begin{minipage}{.3\textwidth}
+				\centering
+				\includegraphics[width=1\linewidth]{Images/filters/old.JPG} 
+				\caption{old}
+			\end{minipage}
+				\begin{minipage}{.3\textwidth}
+				\centering
+				\includegraphics[width=1\linewidth]{Images/filters/predator.JPG} 
+				\caption{predator}
+			\end{minipage}
+			\begin{minipage}{.3\textwidth}
+				\centering
+				\includegraphics[width=1\linewidth]{Images/filters/photocopy.JPG} 
+				\caption{photocopy}
+			\end{minipage}		
+		\end{figure}		
+	\end{frame}
+
+
+%% COULEURS %%
+\section{Couleurs}
+%gestion des couleurs, color blending, ...
+	\begin{frame}{Gestion des Couleurs}
+	gestion des couleurs, color blending, ...
+	\end{frame}
+
+
+
+
+%% TEXTE AVANCÉ %%
+\section{Texte Avancé}
+	\begin{frame}{Texte Avancé}
+		Texte 3D, remplir un texte avec une texture, texte ondulé, ombre sous le texte, etc
+	\end{frame}
+
+
+
+
+
+
+
+
+
+	\begin{frame}
+		\todo[inline]{Exercices : .text, contourner automatiquement, texte "3D"}
+	\end{frame}
 
 \appendix 
 
@@ -415,104 +624,5 @@ Introduction au montage photo avec GIMP}
 	Tutoriels gimp bien foutus
 	\url{https://docs.gimp.org/fr/}
 \end{frame}
-
-\begin{frame}
-	G'MIC
-\end{frame}
-
-\begin{comment}
-\begin{frame}
-	Le libre rapidement 
-	
-	Permet de faire plein de choses cool (et rapides)
-	
-	Audacity,...
-\end{frame}
-
-\begin{frame}
-	
-	\begin{enumerate}
-	\item Ouvrir une image : File/open ==> choisir l'image à ouvrir 
-	
-	Ou ... plus simple : faire glisser l'image sur l'environnement de travail
-	
-	\item Créer un nouveau projet ==> format .xcf
-	
-	\item Pour obtenier une image en format "commun" ==> File/Export as ==> choisir le nom de fichier et l'extension (.png, .jpeg, .pdf, .text, .gif, .ps, .psd(compatibilité photoshop),...)
-	\end{enumerate}
-\end{frame}
-
-\begin{frame}
-	Description rapide des fenêtres 
-	\begin{enumerate}
-	\item Menu
-	\item Fenêtre d'outils 
-	\item Fenêtre de calques 
-	
-	\end{enumerate}
-	Environement ouvert (échelles, zone de travail)
-\end{frame}
-
-\begin{frame}
-	Outils : description générale
-	
-	Ctrl + B pour l'ouvrir (ou windows/Toolboxes)
-	
-	\begin{enumerate}
-	\item Double clique pour les paramètres
-	\end{enumerate} 
-\end{frame}
-
-\begin{frame}
-	Outils : description par outil
-	
-	+ Raccourcis de l'outil
-	
-	+ Paramètres les plus courraments utilisés
-\end{frame}
-
-\begin{frame}
-	Crayon
-	
-	Majuscule maintenue + Clique ==> tracer une ligne droite 
-\end{frame}
-
-\begin{frame}
-	Layer manager 
-	
-	Ctrl + L (ou windows/Layers) pour l'ouvrir
-	
-	$\Rightarrow$ pour masquer, superposer, mettre à l'avant plan,... 
-	 
-	\begin{itemize}
-		\item Calque (tel quel)
-		\item Texte 
-		%\item Filtre (déconseillé)
-	\end{itemize}
-	
-	Attention : modifications QUE sur les layers sélectionnés 
-	
-	+ Masque (= ...) 
-	\todo[inline]{exemple photo (layes cachés,...)}	 
-\end{frame}
-
-\begin{frame}
-	Selection editor (All, shrink, grow, invert,...)
-	
-	$\Rightarrow$ Clique droit/	Select/All,Invert,None,...
-\end{frame}
-
-\begin{frame}
-	Canaux (alpha et différentes couleurs)
-	
-	Canal alpha = ??
-	
-	Opérations sur les couleurs (mentionner rapidement : niveaux, balances, seuils, saturation,...)
-\end{frame}
-
-\begin{frame}
-	Filtres et effets (ombres sous le texte,...)
-\end{frame}
-\end{comment}
 
 \end{document}
