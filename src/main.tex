@@ -28,13 +28,15 @@
 \makeatother
 \setbeamerfont{subsection in toc}{size=\scriptsize}
 
+\setbeamertemplate{frametitle continuation}{}
+
 \graphicspath{{Images/}}
 \definecolor{gris}{RGB}{228,228,228}
 \definecolor{bleu}{RGB}{34,148,255}
 \definecolor{darkgray}{rgb}{0.3,0.3,0.3}
 \usefonttheme[onlymath]{serif} % to see the difference when I do mathsf
 
-\logo{\includegraphics[height=5mm]{logo_12-13-mini.png}}
+\logo{\includegraphics[height=5mm]{Images/logo_12-13-mini.png}}
 \institute{Louvain-li-Nux}
 \title{\textbf{Formation GIMP}\\
 Introduction au montage photo avec GIMP}
@@ -155,36 +157,222 @@ Introduction au montage photo avec GIMP}
 
 \end{frame}
 
-
-
-
-\begin{frame}
-	Installation
+\begin{frame}[allowframebreaks]{Les outils}
+	
+	\begin{figure}
+        	\centering
+        	\includegraphics[width=0.4\textwidth]{Images/gimp_toolbox.png}
+        	\caption{La boite à outils de GIMP} 
+    	\end{figure}
+	
+	\textbf{Accès}
 	
 	\begin{itemize}
-	\item Windows
-	
-	\fbox{\url{https://www.gimp.org/downloads/}}
-	
-	\item Linux
-	
-	%\begin{lstlisting}[language=bash]
-  	%$ sudo apt install gimp
-	%\end{lstlisting}
-	
-	\item MAC OS X
-	
-	\fbox{\url{https://www.gimp.org/downloads/}}
-		
+		\item Fenêtres > Boite à outils
+		\item Outils > Boite à outils
 	\end{itemize}
+	
+	\vspace{0.2cm}
+	\textbf{Raccourci} \keys{\ctrl + B}
+	
+	\framebreak
+	\textbf{Paramètres} \textit{double} cliquer sur l'icone l'outil concerné
+	\begin{figure}
+        	\centering
+        	\includegraphics[width=0.4\textwidth]{Images/option_outil.png}
+        	\caption{Exemple : paramètres de l'outil de sélection} 
+    	\end{figure}
+
+\end{frame}	
+
+\begin{frame}{Les outils de sélection}
+\todo[inline]{icones outils \& Image résultat \& Interfaces}
+\begin{enumerate}
+	\item Rectangulaire \keys{R}	
+	\item Elliptique \keys{E}
+	\item Ciseaux intelligents \keys{I}
+	\item A main levée \keys{F}
+	\begin{itemize}
+		\item \textbf{Trait continu} Maintenier le clic gauche 
+		\item \textbf{Point par point} Clic sur chaque point successif 
+	\end{itemize} 
+	\item Par couleur \keys{Maj + O}
+\end{enumerate}
 \end{frame}
 
+\begin{frame}[allowframebreaks]{Les outils de transformation}
+\begin{enumerate}
+	\item Rotation \keys{Maj + R}
+	
+	\item Agrandissement/Réduction \keys{Maj + T}
+		
+	\item Inversion \keys{Maj + F}
+	
+	\item Mise en perspective \keys{Maj + R}
+	
+	\item Cisaillement \keys{Maj + S}
+	
+	\item Découpe
+\end{enumerate}
+\end{frame}
+
+\begin{frame}{Les outils de colloration}
+
+\textbf{Couleurs actives}
+
+\begin{overprint}
+\begin{figure}
+	\centering
+	\begin{tikzpicture}[scale=0.7, transform shape]
+        \node[anchor=south west,inner sep=0] at (0.4,0) {\includegraphics[width=0.1\textwidth]{Images/gimp_couleurs_actives.png}};
+        \onslide<2>{\draw[teal,ultra thick,rounded corners] (0.25,0.3) rectangle (1.5,1); 
+        \node [anchor=center, teal] (note) at (0.7,1.4) {\Large Avant-plan \textcolor{black}{{\small (Clic \textbf{gauche})}}};}
+	\onslide<3>{\draw[red,ultra thick,rounded corners] (0.6,0) rectangle (1.55,0.7);
+        \node [anchor=center, red] (Inner) at (0.7,-0.3) {\Large Arrière-plan \textcolor{black}{{\small (Clic \textbf{droit})}}};}
+    	\end{tikzpicture} 
+	%\includegraphics[width=0.1\textwidth]{Images/gimp_couleurs_actives.png}
+\end{figure}
+
+\vspace{-0.6cm}
+\textbf{Palette des couleurs} Double clique sur l'une des couleurs actives
+\begin{figure}
+	\centering
+	\begin{tikzpicture}[scale=1, transform shape]
+        \node[anchor=south west,inner sep=0] at (0.4,0) {\includegraphics[width=0.4\textwidth]{Images/gimp_color_box.png}};
+
+        \onslide<4>{\draw[red,ultra thick,rounded corners] (4.2,1.2) rectangle (4.6,1.6); 
+        \node [anchor=center, red] (note) at (3.7,0.5) {\Large Sélection \\de couleur};}
+    	\end{tikzpicture} 
+	%\includegraphics[width=0.1\textwidth]{Images/gimp_couleurs_actives.png}
+\end{figure}
+\end{overprint}
+
+\end{frame}
+\begin{frame}{Les outils de colloration}
+\begin{minipage}[t]{0.49\textwidth}
+	\textbf{Code HTML}
+	
+	\vspace{0.2cm}
+	Couleurs pré-définies
+	
+	\vspace{0.2cm}
+	
+	\begin{center}
+	\fbox{\parbox{0.7\linewidth}{%
+	\url{https://www.toutes-les-couleurs.com/code-couleur-html.php}	
+	}}
+	\end{center}
+
+\end{minipage}\hfill
+\begin{minipage}[t]{0.49\textwidth}
+	\textbf{Code RGB}
+	
+	\begin{itemize}
+		\item[H] Teinte
+		\item[S] Valeure 
+		\item[V] Saturation
+		\item[R] Rouge
+		\item[G] Vert 
+		\item[B] Bleu
+	\end{itemize}
+	
+\end{minipage}
+
+\end{frame}
+
+\begin{frame}{L'outil de texte}
+
+\end{frame}
+
+\begin{frame}{Autres outils}
+\begin{enumerate}
+	\item Zoom \keys{Z}
+	\item Déplacement \keys{M}
+	\item Alignement \keys{Q}
+\end{enumerate}
+\end{frame}
+
+\begin{frame}{Les mesures}
+\begin{itemize}
+	\item \textbf{Echelle graduée} aux \textit{extrémités} de l'image
+	\todo[inline]{image + Zone du pointeur}
+	\item Outil de mesure \keys{Maj + M}
+	\todo[inline]{Exemple de mesure}
+\end{itemize}
+\end{frame}
+
+\begin{frame}[allowframebreaks]{Les calques}
+	\begin{figure}
+        	\centering
+        	\includegraphics[width=0.3\textwidth]{Images/gimp_calques.png}
+        	%\caption{Fenêtre de calques de GIMP} 
+    	\end{figure}
+    	
+	\textbf{Accès} Fenêtres > Calques
+	
+	\vspace{0.2cm}
+	\textbf{Raccourci} \keys{\ctrl + L}
+	
+	\framebreak
+	
+	\begin{itemize}
+		\item \textbf{Superposition} d'images
+		\begin{itemize}
+			\item \textit{Avant-plan} : le plus haut
+			\item \textit{Arrière-plan} : le plus bas
+		\end{itemize}
+		\item Visible ou non 
+		\item Ancrable
+		\item Indépendant
+	\end{itemize}	
+	
+	\begin{ennumerate}
+		\item Chaque calque s'utilises \textbf{Indépendemment}
+	\end{ennumerate}
+
+\end{frame}
+
+\begin{frame}
+	\todo[inline]{Exercices : .text, contourner automatiquement, texte "3D"}
+\end{frame}
+
+\appendix 
+
+\begin{frame}
+	Récapitulatif des raccourcis 
+	\begin{itemize}
+	%todo A CLASSER (ex: view, selection, tools, ...)
+	\item Ctrl + B
+	\item Ctrl + L
+	\item Raccourcis classiques (Ctrl + A (tout sélectionner), MAJ + Ctrl + A (tout déselectionner), Ctrl + C, Ctrl + V, Ctrl + I (inverser la sélection)...)
+	\item +
+	\item -
+	\item 1,2,3,4,5, MAJ + 2, MAJ + 3, MAJ + 4, MAJ + 5  
+	\item R = rectangle 
+	\item E = ellipse 
+	\item F = free select
+	\item Ctrl appuyé = sélection de couleur
+	\end{itemize}
+	
+	\url{http://www.gimpusers.com/gimp/hotkeys}
+\end{frame}
+
+\begin{frame}
+	Tutoriels gimp bien foutus
+	\url{https://docs.gimp.org/fr/}
+\end{frame}
+
+\begin{frame}
+	G'MIC
+\end{frame}
+
+\begin{comment}
 \begin{frame}
 	Le libre rapidement 
 	
 	Permet de faire plein de choses cool (et rapides)
 	
-	Adacity,...
+	Audacity,...
 \end{frame}
 
 \begin{frame}
@@ -271,38 +459,6 @@ Introduction au montage photo avec GIMP}
 \begin{frame}
 	Filtres et effets (ombres sous le texte,...)
 \end{frame}
+\end{comment}
 
-\begin{frame}
-	\todo[inline]{Exercices : .text, contourner automatiquement, texte "3D"}
-\end{frame}
-
-\appendix 
-
-\begin{frame}
-	Récapitulatif des raccourcis 
-	\begin{itemize}
-	%todo A CLASSER (ex: view, selection, tools, ...)
-	\item Ctrl + B
-	\item Ctrl + L
-	\item Raccourcis classiques (Ctrl + A (tout sélectionner), MAJ + Ctrl + A (tout déselectionner), Ctrl + C, Ctrl + V, Ctrl + I (inverser la sélection)...)
-	\item +
-	\item -
-	\item 1,2,3,4,5, MAJ + 2, MAJ + 3, MAJ + 4, MAJ + 5  
-	\item R = rectangle 
-	\item E = ellipse 
-	\item F = free select
-	\item Ctrl appuyé = sélection de couleur
-	\end{itemize}
-	
-	\url{http://www.gimpusers.com/gimp/hotkeys}
-\end{frame}
-
-\begin{frame}
-	Tutoriels gimp bien foutus
-	\url{https://docs.gimp.org/fr/}
-\end{frame}
-
-\begin{frame}
-	G'MIC
-\end{frame}
 \end{document}
