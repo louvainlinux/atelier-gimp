@@ -241,12 +241,38 @@ Introduction au montage photo avec GIMP}
 
 \end{frame}	
 
-\begin{frame}{Les outils de sélection}
+\begin{frame}[allowframebreaks]{Les outils de sélection}
 \todo[inline]{icones outils \& Image résultat \& Interfaces}
 \begin{enumerate}
-	\item Rectangulaire \keys{R}	
+	\item Rectangulaire \keys{R}
+	
+	Options : 
+		
+	\begin{itemize}
+		\item Position
+		\item Proportions fixées
+		\item Hauteur fixée
+		\item Largeur fixée
+	\end{itemize}
+	
+	\framebreak
+	
 	\item Elliptique \keys{E}
+	
+	Options : 
+		
+	\begin{itemize}
+		\item Position
+		\item Proportions fixées
+		\item Hauteur fixée
+		\item Largeur fixée
+	\end{itemize}
+	
+	\framebreak 
+	
 	\item Ciseaux intelligents \keys{I}
+	
+	\textbf{Attention} Une fois le contour terminer, cliquer au \textbf{centre} de celui-ci pour le valider
 	\item A main levée \keys{F}
 	\begin{itemize}
 		\item \textbf{Trait continu} Maintenier le clic gauche 
@@ -256,17 +282,164 @@ Introduction au montage photo avec GIMP}
 \end{enumerate}
 \end{frame}
 
+\begin{frame}{Les outils de sélection}
+\textbf{Paramètres de sélection}
+\begin{figure}
+        \centering
+        \includegraphics[width=0.4\textwidth]{Images/option_outil} 
+\end{figure}
+
+\begin{enumerate}
+	\item \textbf{Remplacer} la sélection actuelle
+	\item \textbf{Ajouter} à la sélection actuelle
+	\item \textbf{Soustraire} à la sélection actuell
+	\item \textbf{Intersection} avec la sélection actuelle	
+\end{enumerate}
+\end{frame}
+
+\begin{frame}{Les outils de sélection}
+\textbf{Paramètres de sélection}
+\begin{overprint}
+\begin{figure}
+        \centering
+        \includegraphics[width=0.4\textwidth, trim = 0 6.3cm 0 0, clip]{Images/option_outil} 
+\end{figure}
+
+\begin{enumerate}
+
+	\only<1>{
+	\item \textbf{Exemple}
+	\begin{figure}
+        	\centering
+        	\includegraphics[width=0.4\textwidth]{Images/Selec1.png} 
+	\end{figure}}
+	
+	\only<2>{
+	\item[1] \textbf{Remplacer} la sélection actuelle
+	\begin{figure}
+        	\centering
+        	\includegraphics[width=0.4\textwidth]{Images/Selec5.png} 
+	\end{figure}}
+	
+	\only<3>{	
+	\item[2] \textbf{Ajouter} à la sélection actuelle
+	\begin{figure}
+        	\centering
+        	\includegraphics[width=0.4\textwidth]{Images/Selec2.png} 
+	\end{figure}}
+	
+	\only<4>{
+	\item[3] \textbf{Soustraire} à la sélection actuelle
+	\begin{figure}
+        	\centering
+        	\includegraphics[width=0.4\textwidth]{Images/Selec3.png} 
+	\end{figure}}
+	
+	\only<5>{
+	\item[4] \textbf{Intersection} avec la sélection actuelle
+	\begin{figure}
+        	\centering
+        	\includegraphics[width=0.4\textwidth]{Images/Selec4.png} 
+	\end{figure}}
+	
+\end{enumerate}
+\end{overprint}
+\end{frame}
+
 \begin{frame}[allowframebreaks]{Les outils de transformation}
 \begin{enumerate}
 	\item Rotation \keys{Maj + R}
 	
+	\begin{minipage}{0.45\textwidth}
+	\begin{figure}
+        	\centering
+        	\includegraphics[width=\textwidth]{Images/gimp-logo.png} 
+	\end{figure}
+	\end{minipage}\hfill
+	\begin{minipage}{0.45\textwidth}
+	\begin{figure}
+        	\centering
+        	\includegraphics[width=\textwidth]{Images/Rotate.png} 
+	\end{figure}
+	\end{minipage}
+	\framebreak
+	
 	\item Agrandissement/Réduction \keys{Maj + T}
-		
+	
+	\begin{minipage}{0.45\textwidth}
+	\begin{figure}
+        	\centering
+        	\includegraphics[width=\textwidth]{Images/gimp-logo.png} 
+	\end{figure}
+	\end{minipage}\hfill
+	\begin{minipage}{0.45\textwidth}
+	\begin{figure}
+        	\centering
+        	\includegraphics[width=\textwidth]{Images/Flip.png} 
+	\end{figure}
+	\end{minipage}
+	\framebreak
+	
 	\item Inversion \keys{Maj + F}
+	
+	\begin{minipage}{0.45\textwidth}
+	\begin{figure}
+        	\centering
+        	\includegraphics[width=\textwidth]{Images/gimp-logo.png} 
+	\end{figure}
+	\end{minipage}\hfill
+	\begin{minipage}{0.45\textwidth}
+	\begin{figure}
+        	\centering
+        	\includegraphics[width=\textwidth]{Images/Flip.png} 
+	\end{figure}
+	\end{minipage}
+	
+	\begin{minipage}{0.45\textwidth}
+	\begin{figure}
+        	\centering
+        	\includegraphics[width=\textwidth]{Images/gimp-logo.png} 
+	\end{figure}
+	\end{minipage}\hfill
+	\begin{minipage}{0.45\textwidth}
+	\begin{figure}
+        	\centering
+        	\includegraphics[width=\textwidth]{Images/Flip2.png} 
+	\end{figure}
+	\end{minipage}
+	\framebreak
+	
+	\item Cisaillement \keys{Maj + S}
+	
+	\begin{minipage}{0.45\textwidth}
+	\begin{figure}
+        	\centering
+        	\includegraphics[width=\textwidth]{Images/NoShear.png} 
+	\end{figure}
+	\end{minipage}\hfill
+	\begin{minipage}{0.45\textwidth}
+	\begin{figure}
+        	\centering
+        	\includegraphics[width=\textwidth]{Images/Shear.png} 
+	\end{figure}
+	\end{minipage}
+	\framebreak
 	
 	\item Mise en perspective \keys{Maj + R}
 	
-	\item Cisaillement \keys{Maj + S}
+	\begin{minipage}{0.45\textwidth}
+	\begin{figure}
+        	\centering
+        	\includegraphics[width=0.5\textwidth]{Images/FullTex.png} 
+	\end{figure}
+	\end{minipage}\hfill
+	\begin{minipage}{0.45\textwidth}
+	\begin{figure}
+        	\centering
+        	\includegraphics[width=0.5\textwidth]{Images/Perspective.png} 
+	\end{figure}
+	\end{minipage}
+	\framebreak
 	
 	\item Découpe
 \end{enumerate}
