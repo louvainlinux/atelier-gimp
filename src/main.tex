@@ -12,6 +12,7 @@
 \usepackage{subcaption}
 \usepackage{menukeys}
 \usepackage{comment}
+%\usepackage{hyperref}
 \captionsetup[figure]{labelformat=empty}
 
 \usepackage[colorinlistoftodos]{todonotes}%disable=true
@@ -596,20 +597,116 @@ Introduction au montage photo avec GIMP}
 	\end{frame}
 	
 	\begin{frame}{Masques de Fusion}
-		\framesubtitle{Quel intérêt?}
-		Faire des montages! Vous pouvez maintenant rajouter un fond à votre motif prédécoupé et le bidouiller un peu pour que ça ne se voit pas! 
-		\begin{center}
+		"Mais ça a l'air super compliqué! Pourquoi j'utiliserais ça et pas ma gomme?"
+		
+		Et bien, pour transformer ceci...
+		
+		\begin{figure}[H]
+			\centering
+			\begin{minipage}{.5\textwidth}
+				\centering
+				\includegraphics[height=100px]{Images/purge/Apollo_15_flag,_rover,_LM,_Irwin}
+			\end{minipage}%
+			\begin{minipage}{.5\textwidth}
+				\centering
+				\includegraphics[height=100px]{Images/mask/Conference_Solvay_Original}
+			\end{minipage}
+		\end{figure}
+				
+		
+	\end{frame}		
+	
+	\begin{frame}{Masques de Fusion}
+		... En ceci, sans trop se casser la tête car la gomme est "destructive".
+	
+		\begin{figure}[H]
+			\centering
+			\includegraphics[height=150px]{Images/mask/Conference_Solvay}
+			\caption{\scriptsize{1927 Solvay Conference on Quantum Mechanics.}}
+		\end{figure}
+	
+	\end{frame}		
+
+	\begin{frame}{Masques de Fusion}
+	\begin{overprint}
+	\begin{enumerate}	
+	\only<1>{		
+		\framesubtitle{Intégrer un élément dans un image}
+		
+		\item[1.] \textbf{Sélectionner} la partie à intégrer et la masquer
+		\begin{figure}
+		\centering
+			\begin{minipage}{.6\textwidth}
+				\centering
+				\includegraphics[height=125px]{Images/mask/mask4}
+			\end{minipage}%
+			\begin{minipage}{.4\textwidth}
+				\centering
+				\includegraphics[height=100px]{Images/mask/mask4_2}
+			\end{minipage}	
+		\end{figure}}
+		
+	\only<2>{		
+		\framesubtitle{Intégrer un élément dans un image}
+		
+		\item[1.] \textbf{Sélectionner} la partie à intégrer et la masquer
+		\begin{figure}
+		\centering
+		\includegraphics[height=150px]{Images/mask/mask5}
+		\end{figure}}
+
+	\only<3>{		
+		\framesubtitle{Intégrer un élément dans un image}
+		
+		\item[1.] \textbf{Sélectionner} la partie à intégrer et la masquer
+		\begin{figure}
+		\centering
+		\includegraphics[height=150px]{Images/mask/mask6}
+		\end{figure}}
+		
+	\only<4>{
+		\framesubtitle{Intégrer un élément dans un image}
+
+		\item[2.] \textbf{Déplacer et transformer} l'élément sur l'arrière plan
+		\item[3.] \textbf{Sélectionner} les zones qui cacheront notre élément et les noircir sur le masque
+		\begin{figure}
+		\centering
+		\includegraphics[height=150px]{Images/mask/mask7}
+		\end{figure}
+	}
+	\only<5>{
+	
+		\item[4.] \textbf{Améliorer} le contour et régler les couleurs $\rightarrow$ Filtres \& Gestion des Couleurs
 			\begin{figure}
-				\includegraphics[scale=.1]{Images/mask/Conference_Solvay}			
-				\caption{\scriptsize{1927 Solvay Conference on Quantum Mechanics. Photograph by Benjamin Couprie, Institut International de Physique Solvay, Brussels, Belgium}}
-				\end{figure}
-		\end{center}
+		\centering
+			\begin{minipage}{.5\textwidth}
+				\includegraphics[height=100px]{Images/mask/mask8}
+			\end{minipage}%
+			\begin{minipage}{.5\textwidth}
+				\includegraphics[height=100px]{Images/mask/mask8_2}
+			\end{minipage}	
+		\end{figure}
+	}
+
+		
+		
+		
+		
+		\end{enumerate}		
+
+	\end{overprint}
 	\end{frame}
+
+
+			
 
 %% PURGES STALINIENNES %%
 \section{Enlever un élément de l'image}
 	\begin{frame}{Enlever un élément de l'image}
-		Dupliquer le calque pour éviter d'endommager l'original et recouvrir la zone à éliminer avec le tampon de clonage
+	\begin{enumerate}
+	
+	\only<1>{
+		\item[1.] \textbf{Dupliquer} le calque pour éviter d'endommager l'original et recouvrir la zone à éliminer avec le tampon de clonage.
 		\begin{itemize}
 			\item Touche \textbf{C}
 			\item Touche \textbf{Ctrl} pour sélectionner la zone qui sera clonée
@@ -619,20 +716,23 @@ Introduction au montage photo avec GIMP}
 				\includegraphics[scale=.15]{Images/purge/purge3} 
 			\end{figure}
 		\end{center}				
-	\end{frame}
+	}
+	\only<2>{
 
-	\begin{frame}{Enlever un élément de l'image}
-		Appliquer un masque le cas échéant et adoucir les contours avec l'outil correcteur (\textbf{B}). Changer de typer de masque de fusion peut aussi s'avérer utile.
+		\item[2.] \textbf{Masquer} le cas échéant et adoucir les transitions avec l'outil correcteur (\textbf{B}). Changer de typer de masque de fusion peut aussi s'avérer utile.
 		\begin{center}
 			\begin{figure}
 				\includegraphics[height=125px]{Images/purge/purge5} 
 			\end{figure}
 		\end{center}				
-	\end{frame}
+	}
 	
+	\end{enumerate}
 	
-	\begin{frame}{Enlever un élément de l'image}
 
+	\end{frame}	
+	\begin{frame}{Enlever un élément de l'image}
+	
 		\begin{figure}[H]
 			\centering
 			\begin{minipage}{.5\textwidth}
@@ -645,9 +745,9 @@ Introduction au montage photo avec GIMP}
 				\includegraphics[height=125px]{Images/purge/Apollo_15_flag,_rover,_LM}
 				\caption{\tiny{Apollo 15 Lunar Module without James Irwin}}
 			\end{minipage}
-		\end{figure}
-
+		\end{figure}	
 	\end{frame}
+
 
 
 %% FILTRES %%
@@ -666,7 +766,17 @@ Introduction au montage photo avec GIMP}
 			\item "Destructifs" et non modifiables par la suite $\rightarrow$ devrait changer avec GIMP 3.2
 		\end{itemize}
 	\end{frame}
-		
+
+
+	\begin{frame}{Filtres}
+		\framesubtitle{Mais, à quoi ça sert Jamy?}
+			\begin{itemize}
+			\item Automatiser une tâche fastidieuse (filtre film, fractales, par ex.)
+			\item Appliquer des effets à un calque (distorsions, transformations en peintures, par ex.)
+			\item Appliquer des corrections à un calque (pixellisation ou flou gaussien, par ex.)
+			\end{itemize}				
+	\end{frame}		
+
 	\begin{frame}{Filtres}
 		\framesubtitle{Et donc, Jamy, comment on applique un filtre?}		
 		Et bien c'est facile! Il suffit de: 
@@ -681,24 +791,48 @@ Introduction au montage photo avec GIMP}
 		
 	\end{frame}
 
-	\begin{frame}{Filtres}
-		\framesubtitle{Mais, à quoi ça sert Jamy?}
+\begin{frame}{Filtres}
 		On peut par exemple appliquer un filtre de flou Gaussien à un masque, pour rendre son intégration à un montage plus discrète:
 		\begin{figure}[H]
 			\centering
 			\begin{minipage}{.5\textwidth}
 				\centering
-				\includegraphics[height=150px]{Images/filters/astronaut1} 
+				\includegraphics[height=120px]{Images/filters/astro0} 
 				\caption{Sans filtre appliqué}
 			\end{minipage}%
 			\begin{minipage}{.5\textwidth}
 				\centering
-				\includegraphics[height=150px]{Images/filters/astronaut2} 
+				\includegraphics[height=120px]{Images/filters/astro1} 
 				\caption{Après application du filtre}
 			\end{minipage}
 		\end{figure}		
+\end{frame}		
+
+
+	\begin{frame}{Filtres}
+		\begin{figure}[H]
+			\centering
+			\begin{minipage}{.6\textwidth}
+				\centering
+				\includegraphics[height=120px]{Images/filters/astroBlur} 
+				\end{minipage}$\rightarrow$%
+			\begin{minipage}{.4\textwidth}
+				\centering
+				\includegraphics[height=100px]{Images/filters/gaussBlur} 
+				\end{minipage}
+
+			\end{figure}		
+	\end{frame}
+
+
+\begin{frame}{Filtres}
+		Il existe une foule d'autres filtres, certains aux effets relativement discrets ou plus "spectaculaires":
 		
-		
+		\begin{figure}[H]
+			\centering
+				\includegraphics[height=150px]{Images/filters/compressed_original} 
+				\caption{\#NoFilter}
+			\end{figure}		
 	\end{frame}
 
 	\begin{frame}{Filtres}
@@ -706,50 +840,161 @@ Introduction au montage photo avec GIMP}
 		
 		\begin{figure}[H]
 			\centering
-			\begin{minipage}{.3\textwidth}
-				\centering
-				\includegraphics[width=1\linewidth]{Images/filters/motion_blur.JPG} 
-				\caption{motion blur}
-			\end{minipage}
-			\begin{minipage}{.3\textwidth}
-				\centering
-				\includegraphics[width=1\linewidth]{Images/filters/pixelize.JPG} 
-				\caption{pixelize}
-			\end{minipage}
-			\begin{minipage}{.3\textwidth}
-				\centering
-				\includegraphics[width=1\linewidth]{Images/filters/ripples.JPG} 
-				\caption{ripples}
-			\end{minipage}
-		\end{figure}
-			
+				\includegraphics[height=150px]{Images/filters/motion_blur} 
+				\caption{Flou cinétique}
+			\end{figure}		
+	\end{frame}
+
+\begin{frame}{Filtres}
+		Il existe une foule d'autres filtres, certains aux effets relativement discrets ou plus "spectaculaires":
+		
+		\begin{figure}[H]
+			\centering	
+				\includegraphics[height=150px]{Images/filters/pixelize} 
+				\caption{Pixéliser}
+			\end{figure}		
+	\end{frame}
+
+\begin{frame}{Filtres}
+		Il existe une foule d'autres filtres, certains aux effets relativement discrets ou plus "spectaculaires":
+		
 		\begin{figure}[H]
 			\centering
-			\begin{minipage}{.3\textwidth}
-				\centering
-				\includegraphics[width=1\linewidth]{Images/filters/old.JPG} 
-				\caption{old}
-			\end{minipage}
-				\begin{minipage}{.3\textwidth}
-				\centering
-				\includegraphics[width=1\linewidth]{Images/filters/predator.JPG} 
-				\caption{predator}
-			\end{minipage}
-			\begin{minipage}{.3\textwidth}
-				\centering
-				\includegraphics[width=1\linewidth]{Images/filters/photocopy.JPG} 
-				\caption{photocopy}
-			\end{minipage}		
-		\end{figure}		
+				\includegraphics[height=150px]{Images/filters/ripples} 
+				\caption{Vagues}
+\end{figure}		
 	\end{frame}
+
+\begin{frame}{Filtres}
+		Il existe une foule d'autres filtres, certains aux effets relativement discrets ou plus "spectaculaires":
+		
+		\begin{figure}[H]
+			\centering
+				\includegraphics[height=150px]{Images/filters/old} 
+				\caption{Vieille photo}
+\end{figure}		
+	\end{frame}
+
+\begin{frame}{Filtres}
+		Il existe une foule d'autres filtres, certains aux effets relativement discrets ou plus "spectaculaires":
+		
+		\begin{figure}[H]
+			\centering
+				\includegraphics[height=150px]{Images/filters/predator} 
+				\caption{Prédateurs}
+\end{figure}		
+	\end{frame}
+
+\begin{frame}{Filtres}
+		Il existe une foule d'autres filtres, certains aux effets relativement discrets ou plus "spectaculaires":
+		
+		\begin{figure}[H]
+			\centering
+				\includegraphics[height=150px]{Images/filters/photocopy} 
+				\caption{Photocopie}
+	\end{figure}		
+	\end{frame}
+
+\begin{frame}{Filtres}
+	Une liste des filtres de base (ainsi que des exemples) est disponible sur le lien suivant:
+	
+	\fbox{\footnotesize{\url{https://alvinalexander.com/design/gimp-catalog-filters-effects-examples-cheat-sheet}}}
+%	\fbox{\url{http://goldnuggetwebs.com/gimp-filters/index.html}}
+	
+%% le premier site me parait meilleur mais la box dépasse du slide. Je verrai comment régler ça une fois  les slides plus avancés - L.	
+	
+\end{frame}
+
 
 
 %% COULEURS %%
-\section{Couleurs}
+\section{Gestion des Couleurs}
 %gestion des couleurs, color blending, ...
 	\begin{frame}{Gestion des Couleurs}
-	gestion des couleurs, color blending, ...
+		Reprenons encore une fois notre astronaute à la conférence Solvay:
+
+		\begin{figure}
+			\centering
+			\includegraphics[height=150px]{Images/colours/col1} 
+		\end{figure}
 	\end{frame}
+	
+	\begin{frame}{Gestion des Couleurs}
+		Noir \& blanc (simple) $\rightarrow$ Désaturer et gérer la luminosité et le contraste (basique).
+		
+		Modifications des couleurs $\rightarrow$ \emph{Destructif} $\rightarrow$ Duplication des calques de travail
+
+		\begin{figure}
+			\centering
+			\includegraphics[height=140px]{Images/colours/col2} 
+		\end{figure}
+	\end{frame}
+	
+	\begin{frame}{Gestion des Couleurs}
+	
+		\begin{figure}[H]
+			\centering
+			\begin{minipage}{.5\textwidth}
+				\centering
+				\includegraphics[height=150px]{Images/colours/col3} 
+				\end{minipage}$\rightarrow$%
+			\begin{minipage}{.5\textwidth}
+				\centering
+				\includegraphics[height=150px]{Images/colours/col4} 
+				\end{minipage}
+			\end{figure}		
+	\end{frame}	
+	
+	\begin{frame}{Gestion des Couleurs}
+	\textbf{Et comment je peux faire pour changer la couleur d'un élément?}
+	Deux techniques:
+	\begin{enumerate}
+		\item Technique du calque coloré (facile et rapide à mettre en place)	
+		\item Technique des variations du la balance des blancs (plus précise mais aussi plus fastidieuse)
+	\end{enumerate}
+		\begin{figure}[H]
+			\centering
+			\begin{minipage}{.5\textwidth}
+				\centering
+				\includegraphics[height=150px]{Images/colours/col5} 
+				\end{minipage}$\rightarrow$%
+			\begin{minipage}{.5\textwidth}
+				\centering
+				\includegraphics[height=150px]{Images/colours/col6} 
+				\end{minipage}
+			\end{figure}			
+	\end{frame}		
+
+	\begin{frame}{Gestion des Couleurs}
+	\framesubtitle{Technique du calque coloré}
+		\begin{enumerate}
+			\only<1>{
+			\item[1.] \textbf{Remplir un calque avec la couleur que l'on souhaite et le masquer pour rendre visible les zones où l'on souhaite changer la couleur}
+			\begin{figure}
+				\centering
+				\includegraphics[height=150px]{Images/colours/col7}
+			\end{figure}
+			}
+			\only<2>{
+			\item[2.]\textbf{Changer le mode de fusion du masque à "Couleur".}
+			\begin{figure}
+				\centering
+				\includegraphics[height=150px]{Images/colours/col8}
+			\end{figure}
+			}		
+		\end{enumerate}
+
+			
+	\end{frame}		
+
+	\begin{frame}{Gestion des Couleurs}
+	\framesubtitle{Par la variation de la balance des blancs}
+		Il "suffit" d'adapter les sliders pour les tons sombres, clairs et demi-teintes de l'image jusqu'à avoir la couleur voulue pour chacun.
+		\begin{figure}[H]
+			\centering
+				\includegraphics[height=150px]{Images/colours/col9} 
+			\end{figure}			
+	\end{frame}	
 
 
 
