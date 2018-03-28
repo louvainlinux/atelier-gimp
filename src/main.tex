@@ -1037,20 +1037,244 @@ Introduction au montage photo avec GIMP}
 %% TEXTE AVANCÉ %%
 \section{Texte Avancé}
 	\begin{frame}{Texte Avancé}
-		Texte 3D, remplir un texte avec une texture, texte ondulé, ombre sous le texte, etc
+		\textbf{Que peut-on faire avec l'outil texte?}		
+
+		Une multitude de choses! Il y a une infinité de possibilités mais n'allons en aborder que quelques-unes.
+		\begin{itemize}
+			\item Projeter une ombre sous le texte
+			\item Faire un texte ondulé
+			\item Faire un texte en 3D
+			\item Remplir du texte avec une texture ou un fond
+		\end{itemize}
+		
+		On peut appliquer des filtres et des vatriations de couleurs à tous les textes et même les transformer en calques s'il le faut!
 	\end{frame}
 
 
+\begin{frame}{Texte Avancé}
+		\framesubtitle{Ombre}
+		\begin{figure}
+		\centering
+		\includegraphics[height=150px]{Images/text/ombre1}
+		\end{figure}
+\end{frame}
+
+
+\begin{frame}{Texte Avancé}
+		\framesubtitle{Ombre}
+		\begin{enumerate}
+		\only<1>{
+			\item[1.] \textbf{Appliquer} un filtre d'ombre portée et modifier les paramètres comme on le souhaite.
+			\begin{figure}
+			\centering
+			\includegraphics[height=150px]{Images/text/ombre2}
+			\end{figure}
+		}
+		\only<2>{
+			\item[1.] \textbf{Appliquer} un filtre d'ombre portée et modifier les paramètres comme on le souhaite.
+			\begin{figure}
+			\centering
+			\includegraphics[height=150px]{Images/text/ombre3}
+			\end{figure}
+		}
+		\end{enumerate}
+\end{frame}
 
 
 
 
 
 
+\begin{frame}{Texte Avancé}
+		\framesubtitle{Texte Ondulé}
+		\begin{figure}[H]
+			\centering
+			\begin{minipage}{.5\textwidth}
+				\centering
+				\includegraphics[height=60px]{Images/text/lorem} 
+				\end{minipage}$\rightarrow$%
+			\begin{minipage}{.5\textwidth}
+				\centering
+				\includegraphics[height=60px]{Images/text/courbf} 
+				\end{minipage}
+			\end{figure}	
+\end{frame}
 
-	\begin{frame}
+\begin{frame}{Texte Avancé}
+		\framesubtitle{Texte Ondulé}
+		\begin{enumerate}
+		\only<1>{
+			\item[1.] Créer un chemin suivant le parcours désiré (touche \textbf{B}). Comme les calques, les chemins disposent de leur propre onglet et son affichables ou --par défaut-- cachés.
+			\begin{figure}
+				\centering
+				\includegraphics[height=150px]{Images/text/courb1}
+			\end{figure}
+		}
+		\only<2>{
+			\item[2.] Appliquer le texte sur le chemin (clic droit $\rightarrow$ Texte le long du chemin).
+			\begin{figure}
+				\centering
+				\includegraphics[height=150px]{Images/text/courb2}
+			\end{figure}			
+		}
+		\only<3>{
+			\item[2.] Appliquer le texte sur le chemin (clic droit $\rightarrow$ Texte le long du chemin).
+			\begin{figure}
+				\centering
+				\includegraphics[height=150px]{Images/text/courb3}
+			\end{figure}
+		}
+		\only<4>{
+			\item[3.] Sélectionner le nouveau chemin et le remplir dans un nouveau calque avec la couleur voulue. 		Dans ce cas-ci "Tracer le chemin" n'en fera que le contour.
+			\begin{figure}
+				\centering
+				\includegraphics[height=150px]{Images/text/courb4}
+			\end{figure}
+		}
+		\end{enumerate}
+\end{frame}
+
+
+\begin{frame}{Texte Avancé}
+	\framesubtitle{Texte Ondulé}
+	Et voilà le travail!
+	\begin{figure}
+	\centering
+		\includegraphics[height=150px]{Images/text/courb5}
+	\end{figure}
+\end{frame}
+
+\begin{frame}{Texte Avancé}
+	\framesubtitle{Texte 3D}
+	\begin{figure}
+	\centering
+	\includegraphics[height=100px]{Images/text/3D1}
+	\end{figure}
+\end{frame}
+
+\begin{frame}{Texte Avancé}
+	\framesubtitle{Texte 3D}
+		\begin{enumerate}
+		\only<1>{
+			\item[1.] \textbf{Créer} une nouvelle images de 500 x 500 px. On y édite alors le texte que l'on souhaite transformer en 3D. Le texte ne peut dépasser ces dimensions! Il faut ensuite sélectionner le calque de texte avec l'outil déplacement (touche \textbf{M}) et le copier. Il devrait être disponible comme une brosse sous le terme de "Presse-papier".
+			\begin{figure}
+			\centering
+			\includegraphics[height=150px]{Images/text/3D01}
+			\end{figure}
+		}
+		\only<2>{
+			\item[2.] \textbf{Revenir} à l'image sur laquelle on souhaite avoir notre texte en 3D et sélectionner l'outil Brosse. On va devoir légèrement le modifier:
+			\begin{itemize}
+				\item Choisir le dégradé dans les "Options de couleur"
+				\item Mettre "l'Espacement" au minimum
+			\end{itemize}
+			\begin{figure}
+			\centering
+			\includegraphics[height=150px]{Images/text/3D2}
+			\end{figure}
+		}
+		\only<3>{
+			\item[3.] \textbf{Modifier} la dynamique de la brosse.
+			\begin{figure}
+			\centering
+			\includegraphics[height=150px]{Images/text/3D3}
+			\end{figure}
+		}		
+		\only<4>{
+			\item[3.] \textbf{Modifier} la dynamique de la brosse.
+
+			Cocher "Couleur/Fondu" dans le tableau qui est apparu. Il suffit maintenant de tracer un trait avec la brosse (Maj + clic) pour avoir notre texte en 3D!			
+			\begin{figure}
+			\centering
+			\includegraphics[height=150px]{Images/text/3D4}
+			\end{figure}
+		}		
+		\end{enumerate}
+\end{frame}
+
+
+\begin{frame}{Texte Avancé}
+	\framesubtitle{Remplir un texte avec une texture}
+		\begin{figure}[H]
+			\centering
+			\begin{minipage}{.5\textwidth}
+				\centering
+				\includegraphics[height=110px]{Images/text/2001_original} 
+				\end{minipage}$\rightarrow$%
+			\begin{minipage}{.5\textwidth}
+				\centering
+				\includegraphics[height=110px]{Images/text/2001_final} 
+				\end{minipage}
+			\end{figure}	
+\end{frame}
+
+\begin{frame}{Texte Avancé}
+	\framesubtitle{Remplir un texte avec une texture}
+	\begin{enumerate}
+\only<1>{
+	\item[1.] 	\textbf{Désaturer} notre image originale (Couleurs $\rightarrow$ Désaturer).
+	\begin{figure}
+			\centering
+			\includegraphics[height=150px]{Images/text/2001_1}
+			\end{figure}
+}
+\only<2>{
+	\item[2.]	\textbf{Postériser} le calque (Couleurs $\rightarrow$ Postériser). Ne garder que deux couleurs.
+\begin{figure}
+			\centering
+			\includegraphics[height=150px]{Images/text/2001_2}
+			\end{figure}
+}
+\only<3>{
+	\item[3.]	\textbf{Rajouter} l'arrière-plan.
+\begin{figure}
+			\centering
+			\includegraphics[height=150px]{Images/text/2001_3}
+			\end{figure}
+}
+\only<4>{
+	\item[4.]	\textbf{Dupliquer} le calque postérisé et le placer en dessous de l'arrière-plan.
+\begin{figure}
+			\centering
+			\includegraphics[height=150px]{Images/text/2001_4}
+			\end{figure}
+}
+\only<5>{
+	\item[5.]	\textbf{Masquer} la couleur noire sur le calque postérisé le plus haut.
+\begin{figure}
+			\centering
+			\includegraphics[height=150px]{Images/text/2001_5}
+			\end{figure}
+}
+\only<6>{
+	\item[6.]	\textbf{Insérer} le texte. Réduire l'espacement des lignes pour que l'arrière plan soit le plus visible possible et faire en sorte que le texte prenne toute la place de l'image.
+\begin{figure}
+			\centering
+			\includegraphics[height=150px]{Images/text/2001_6}
+			\end{figure}
+}
+\only<7>{
+	\item[7.]	\textbf{Sélectionner} le canal alpha du texte.
+\begin{figure}
+			\centering
+			\includegraphics[height=150px]{Images/text/2001_7}
+			\end{figure}
+}
+\only<8>{
+	\item[8.]	\textbf{Masquer} l'arrière plan avec la nouvelle sélection et cacher le calque de texte.
+\begin{figure}
+			\centering
+			\includegraphics[height=150px]{Images/text/2001_8}
+			\end{figure}
+}
+	
+	\end{enumerate}
+\end{frame}
+
+
+\begin{frame}
 		\todo[inline]{Exercices : .text, contourner automatiquement, texte "3D"}
-	\end{frame}
+\end{frame}
 
 \appendix 
 
