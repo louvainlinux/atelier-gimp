@@ -67,7 +67,7 @@ Introduction au montage photo avec GIMP}
 \begin{frame}[allowframebreaks]{Qu'est-ce que GIMP ?}
     \begin{itemize}
         \item GIMP = GNU Image Manipulation Program
-        \item Logiciel de traitement d'images bitmap.
+        \item Logiciel de traitement d'images matricielles.
         \item Alternative gratuite et libre à Adobe Photoshop
     \end{itemize}
     \begin{figure}
@@ -168,6 +168,7 @@ Introduction au montage photo avec GIMP}
 	\end{center}
 \end{frame}
 
+\begin{comment}
 \begin{frame}{Les couleurs}
 	Il est possible de gérer 2 couleurs: les couleurs de premier et d'arrière-plan:
 	\begin{center}
@@ -213,6 +214,7 @@ Introduction au montage photo avec GIMP}
 	Il existe de nombreux modes et de nombreuses formes, n'hésitez pas à les essayer pour les découvrir. 
 	
 \end{frame}
+\end{comment}
 
 \begin{frame}[allowframebreaks]{Les outils}
 	
@@ -604,6 +606,39 @@ Introduction au montage photo avec GIMP}
 	\todo[inline]{Exercices : .text, contourner automatiquement, texte "3D"}
 \end{frame}
 
+\begin{frame}[allowframebreaks]{Exercice I}
+	Image de départ: \href{http://louvainlinux.github.io/atelier-gimp/src/Images/ex1/original.jpg}{Lien de l'image}
+	\begin{center}
+	\includegraphics[width=0.45\textwidth]{Images/ex1/Ex1_step0.jpg}
+	\includegraphics[width=0.45\textwidth]{Images/ex1/Ex1_step5.jpg}
+	\end{center}
+	\framebreak
+	Découpe de l'image
+	\begin{center}
+		\includegraphics[width=0.4\textwidth]{Images/ex1/Ex1_step1.jpg}
+	\end{center}
+	\framebreak
+	Inversion de l'image
+	\begin{center}
+		\includegraphics[width=0.4\textwidth]{Images/ex1/Ex1_step2.jpg}
+	\end{center}
+	\framebreak
+	Coloration de zones du ballon en R=237, G=178 et B=35.
+	\begin{center}
+		\includegraphics[width=0.4\textwidth]{Images/ex1/Ex1_step3.jpg}
+	\end{center}
+	\framebreak
+	Mise en place d'un cadre
+	\begin{center}
+		\includegraphics[width=0.4\textwidth]{Images/ex1/Ex1_step4.jpg}
+	\end{center}
+	\framebreak
+	Texte en rouge
+	\begin{center}
+		\includegraphics[width=0.4\textwidth]{Images/ex1/Ex1_step5.jpg}
+	\end{center}
+\end{frame}
+
 %%% MASQUES de FUSION%%
 \section{Masques de Fusion}
 	\begin{frame}{Masques de Fusion}
@@ -732,6 +767,15 @@ Introduction au montage photo avec GIMP}
 	\end{overprint}
 	\end{frame}
 
+	\begin{frame}{Exercices II}
+	\begin{center}
+		À vous de jouer ! Faites redescrendre l'astronaute jusqu'à la conférence de Solvay !
+		\begin{itemize}
+			\item Apollo 15: \href{http://louvainlinux.github.io/atelier-gimp/src/Images/purge/Apollo_15_flag,_rover,_LM,_Irwin.jpg}{Lien de l'image}
+			\item Conférence de Solvay: \href{http://louvainlinux.github.io/atelier-gimp/src/Images/mask/Conference_Solvay_Original.jpg}{Lien de l'image}
+		\end{itemize}
+	\end{center}
+	\end{frame}
 
 			
 
@@ -766,14 +810,14 @@ Introduction au montage photo avec GIMP}
 	
 
 	\end{frame}	
-	\begin{frame}{Enlever un élément de l'image}
+	\begin{frame}{Exercice III}
 	
 		\begin{figure}[H]
 			\centering
 			\begin{minipage}{.5\textwidth}
 				\centering
 				\includegraphics[height=125px]{Images/purge/Apollo_15_flag,_rover,_LM,_Irwin}
-				\caption{\tiny{Apollo 15 Lunar Module Pilot James Irwin salutes the U.S. flag.}}
+				\caption{\tiny{Apollo 15 Lunar Module Pilot James Irwin salutes the U.S. flag.\\\href{http://louvainlinux.github.io/atelier-gimp/src/Images/purge/Apollo_15_flag,_rover,_LM,_Irwin.jpg}{Lien de l'image}}}
 			\end{minipage}%
 			\begin{minipage}{.5\textwidth}
 				\centering
@@ -1030,6 +1074,13 @@ Introduction au montage photo avec GIMP}
 				\includegraphics[height=150px]{Images/colours/col9} 
 			\end{figure}			
 	\end{frame}	
+	
+	\begin{frame}{Exercice IV}
+		À vous de jouer ! Changer la couleur de la combinaison comme dans l'exemple.
+		\begin{itemize}
+			\item \href{http://louvainlinux.github.io/atelier-gimp/src/Images/colours/col5.jpg}{Lien de l'image}
+		\end{itemize}
+	\end{frame}
 
 
 
@@ -1278,6 +1329,7 @@ Introduction au montage photo avec GIMP}
 
 \appendix 
 
+\begin{comment}
 \begin{frame}
 	\textbf{Récapitulatif des raccourcis}
 	\begin{itemize}
@@ -1305,9 +1357,14 @@ Introduction au montage photo avec GIMP}
 	\fbox{\url{http://www.gimpusers.com/gimp/hotkeys}}
 	\end{center}
 \end{frame}
+\end{comment}
 
-\begin{frame}
-	\textbf{Tutoriels} gimp \fbox{\url{https://docs.gimp.org/fr/}}
+\begin{frame}{Quelques liens utiles}
+	\begin{itemize}
+		\item Documentation en français \url{https://docs.gimp.org/fr/}
+		\item Tutoriels en anglais \url{https://www.gimp.org/tutorials/}
+		\item Compilation de tutoriels en anglais \url{http://www.gimpology.com/}
+	\end{itemize}
 \end{frame}
 
 
