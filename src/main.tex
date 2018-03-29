@@ -22,6 +22,25 @@
 \DeclareMathOperator{\sumN}{\sum_{i=1}^n}
 \DeclareMathOperator{\var}{\mathrm{Var}}
 
+\newcommand{\tool}[3]{%
+	\begin{minipage}{0.40\textwidth}
+	\item #1	
+	\end{minipage}\hfill
+	\begin{minipage}{0.20\textwidth}
+	\begin{flushright}
+	\keys{#2}
+	\end{flushright}
+	\end{minipage}
+	\begin{minipage}{0.06\textwidth}
+	\fbox{ou}
+	\end{minipage}
+	\begin{minipage}{0.1\textwidth}
+	\includegraphics[width=\textwidth]{Images/#3}
+	\end{minipage}
+}
+
+\usepackage{tabularx}
+
 \lstdefinestyle{nonumbers}
 {numbers=none}
 
@@ -245,11 +264,14 @@ Introduction au montage photo avec GIMP}
 \end{frame}	
 
 \begin{frame}[allowframebreaks]{Les outils de sélection}
-\todo[inline]{icones outils \& Image résultat \& Interfaces}
 \begin{enumerate}
-	\item Rectangulaire \keys{R}
+
 	
-	Options : 
+	\tool{Rectangulaire}{R}{rectangle.png}
+	
+	\vspace{0.5cm}
+	\begin{minipage}[t]{0.45\textwidth}
+	Options (\textit{fixé}) : 
 		
 	\begin{itemize}
 		\item Position
@@ -257,12 +279,23 @@ Introduction au montage photo avec GIMP}
 		\item Hauteur fixée
 		\item Largeur fixée
 	\end{itemize}
+	\end{minipage}
+	\begin{minipage}[t]{0.45\textwidth}
+	
+	\begin{figure}
+        	\centering
+        	\includegraphics[width=\textwidth]{Images/option_outil} 
+	\end{figure}
+	\end{minipage}
 	
 	\framebreak
 	
-	\item Elliptique \keys{E}
 	
-	Options : 
+	\tool{Elliptique}{E}{ellipse.png}	
+	
+	\vspace{0.5cm}
+	\begin{minipage}[t]{0.45\textwidth}
+	Options (\textit{fixé}) : 
 		
 	\begin{itemize}
 		\item Position
@@ -270,18 +303,124 @@ Introduction au montage photo avec GIMP}
 		\item Hauteur fixée
 		\item Largeur fixée
 	\end{itemize}
+	\end{minipage}
+	\begin{minipage}[t]{0.45\textwidth}
+	
+	\begin{figure}
+        	\centering
+        	\includegraphics[width=\textwidth]{Images/option_outil} 
+	\end{figure}
+	\end{minipage}
 	
 	\framebreak 
 	
-	\item Ciseaux intelligents \keys{I}
 	
-	\textbf{Attention} Une fois le contour terminer, cliquer au \textbf{centre} de celui-ci pour le valider
-	\item A main levée \keys{F}
+	
+	
+	\tool{Ciseaux intelligents}{I}{smart_cut.png}
+	
+	\begin{minipage}{0.45\textwidth}
+	\begin{figure}
+        	\centering
+        	\includegraphics[width=\textwidth]{Images/gimp-logo.png} 
+	\end{figure}
+	\end{minipage}\hfill
+	\begin{minipage}{0.45\textwidth}
+	\begin{figure}
+        	\centering
+        	\includegraphics[width=\textwidth]{Images/smart_ex.png} 
+	\end{figure}
+	\end{minipage}
+	
+	\vspace{0.4cm}
+	\textbf{Attention} Une fois le contour terminé, cliquer au \textbf{centre} de celui-ci pour le valider
+	
+	\framebreak
+	
+	\tool{A main levée}{F}{freeSelect.png}
+
 	\begin{itemize}
 		\item \textbf{Trait continu} Maintenier le clic gauche 
+	\end{itemize}
+	
+		\begin{minipage}{0.45\textwidth}
+		\begin{figure}
+        		\centering
+        		\includegraphics[width=\textwidth]{Images/gimp-logo.png} 
+		\end{figure}
+		\end{minipage}\hfill
+		\begin{minipage}{0.45\textwidth}
+		\begin{figure}
+        		\centering
+        		\includegraphics[width=\textwidth]{Images/main_levee.png} 
+		\end{figure}
+		\end{minipage}
+		
+	\framebreak
+	
+	\setcounter{enumi}{3}
+	\tool{A main levée}{F}{freeSelect.png}
+
+	\begin{itemize}
 		\item \textbf{Point par point} Clic sur chaque point successif 
-	\end{itemize} 
-	\item Par couleur \keys{Maj + O}
+	\end{itemize}
+	
+		\begin{minipage}{0.45\textwidth}
+		\begin{figure}
+        		\centering
+        		\includegraphics[width=\textwidth]{Images/gimp-logo.png} 
+		\end{figure}
+		\end{minipage}\hfill
+		\begin{minipage}{0.45\textwidth}
+		\begin{figure}
+        		\centering
+        		\includegraphics[width=\textwidth]{Images/point_point.png} 
+		\end{figure}
+		\end{minipage}
+	
+		
+		\framebreak		
+		\tool{Par couleur}{Maj + 0}{colorSelect}
+		
+		\vspace{0.3cm}
+		\begin{minipage}[t]{0.55\textwidth}
+		Options : 
+		
+		\begin{itemize}
+			\item Mode de sélection
+			\item Seuil
+			\item Echantilloner sur tous les calques
+		\end{itemize}
+		\end{minipage}
+		\begin{minipage}[t]{0.35\textwidth}
+		
+		\begin{figure}
+        		\centering
+        		\includegraphics[width=\textwidth]{Images/opt_color_select} 
+		\end{figure}
+		\end{minipage}
+		
+		\framebreak
+		
+		\setcounter{enumi}{4}
+		\tool{Par couleur}{Maj + 0}{colorSelect}
+		
+		\begin{minipage}{0.45\textwidth}
+
+		\begin{figure}
+        		\centering
+        		\includegraphics[width=\textwidth]{Images/gimp-logo.png} 
+        		\caption{Figure originelle}
+		\end{figure}
+		\end{minipage}\hfill
+		\begin{minipage}{0.45\textwidth}
+		\begin{figure}
+        		\centering
+        		\includegraphics[width=\textwidth, trim = 0 0.22cm 0 0, clip]{Images/color_ex.png} 
+        		\caption{Zone sélectionnée (en \textbf{rouge})}
+		\end{figure}
+		\end{minipage}
+
 \end{enumerate}
 \end{frame}
 
@@ -351,7 +490,9 @@ Introduction au montage photo avec GIMP}
 
 \begin{frame}[allowframebreaks]{Les outils de transformation}
 \begin{enumerate}
-	\item Rotation \keys{Maj + R}
+
+	\tool{Rotation}{Maj+R}{rotate.png}
+	\vspace{0.5cm}
 	
 	\begin{minipage}{0.45\textwidth}
 	\begin{figure}
@@ -367,7 +508,7 @@ Introduction au montage photo avec GIMP}
 	\end{minipage}
 	\framebreak
 	
-	\item Agrandissement/Réduction \keys{Maj + T}
+	\tool{Agrandissement/Réduction}{Maj+T}{rescale.png}
 	
 	\begin{minipage}{0.45\textwidth}
 	\begin{figure}
@@ -383,7 +524,7 @@ Introduction au montage photo avec GIMP}
 	\end{minipage}
 	\framebreak
 	
-	\item Inversion \keys{Maj + F}
+	\tool{Inversion}{Maj+F}{flip.png}
 	
 	\begin{minipage}{0.45\textwidth}
 	\begin{figure}
@@ -397,6 +538,10 @@ Introduction au montage photo avec GIMP}
         	\includegraphics[width=\textwidth]{Images/Flip.png} 
 	\end{figure}
 	\end{minipage}
+	
+	\framebreak
+	\setcounter{enumi}{2}	
+	\tool{Inversion}{Maj+F}{flip.png}
 	
 	\begin{minipage}{0.45\textwidth}
 	\begin{figure}
@@ -412,23 +557,25 @@ Introduction au montage photo avec GIMP}
 	\end{minipage}
 	\framebreak
 	
-	\item Cisaillement \keys{Maj + S}
+	\tool{Cisaillement}{Maj+S}{shear.png}
+	\vspace{0.5cm}
 	
 	\begin{minipage}{0.45\textwidth}
 	\begin{figure}
         	\centering
-        	\includegraphics[width=\textwidth]{Images/NoShear.png} 
+        	\includegraphics[width=0.8\textwidth]{Images/NoShear.png} 
 	\end{figure}
 	\end{minipage}\hfill
 	\begin{minipage}{0.45\textwidth}
 	\begin{figure}
         	\centering
-        	\includegraphics[width=\textwidth]{Images/Shear.png} 
+        	\includegraphics[width=0.8\textwidth]{Images/Shear.png} 
 	\end{figure}
 	\end{minipage}
 	\framebreak
 	
-	\item Mise en perspective \keys{Maj + R}
+	\tool{Mise en perspective}{Maj+R}{perspective.png}
+	\vspace{0.3cm}
 	
 	\begin{minipage}{0.45\textwidth}
 	\begin{figure}
@@ -444,7 +591,7 @@ Introduction au montage photo avec GIMP}
 	\end{minipage}
 	\framebreak
 	
-	\item Découpe
+	\tool{Découpe}{Maj+C}{cutTool.png}
 	
 	\begin{minipage}{0.45\textwidth}
 	\begin{figure}
@@ -532,11 +679,23 @@ Introduction au montage photo avec GIMP}
 
 %\end{frame}
 
-\begin{frame}{Autres outils}
+\begin{frame}[allowframebreaks]{Autres outils}
 \begin{enumerate}
-	\item Zoom \keys{Z}
-	\item Déplacement \keys{M}
-	\item Alignement \keys{Q}
+	\tool{Zoom}{Z}{zoom.png}
+	
+	\textbf{Raccourci} \keys{{+}}, \keys{-}, \keys{1}, \keys{2}, \keys{3}, \keys{4} et \keys{5}
+	\vspace{0.6cm}
+	
+	\tool{Déplacement}{M}{moove.png}
+	
+	\framebreak
+	\tool{Alignement}{Q}{autopose.png}
+	
+	\begin{figure}
+        	\centering
+        	\includegraphics[width=0.3\textwidth]{Images/automoove_opt.png} 
+	\end{figure}
+	
 \end{enumerate}
 \end{frame}
 
@@ -602,9 +761,6 @@ Introduction au montage photo avec GIMP}
 
 \end{frame}
 
-\begin{frame}
-	\todo[inline]{Exercices : .text, contourner automatiquement, texte "3D"}
-\end{frame}
 
 \begin{frame}[allowframebreaks]{Exercice I}
 	Image de départ: \href{http://louvainlinux.github.io/atelier-gimp/src/Images/ex1/original.jpg}{Lien de l'image}
@@ -1323,13 +1479,20 @@ Introduction au montage photo avec GIMP}
 \end{frame}
 
 
-\begin{frame}
-		\todo[inline]{Exercices : .text, contourner automatiquement, texte "3D"}
-\end{frame}
-
 \appendix 
 
-\begin{comment}
+
+\begin{frame}{Quelques liens utiles}
+	\begin{itemize}
+		\item Documentation en français : \url{https://docs.gimp.org/fr/}
+		\item Tutoriels en anglais : \url{https://www.gimp.org/tutorials/}
+		\item Compilation de tutoriels en anglais : \url{http://www.gimpology.com/}
+		\item Raccourcis : \url{http://www.gimpusers.com/gimp/hotkeys}
+	\end{itemize}
+\end{frame}
+
+
+%\begin{comment}
 \begin{frame}
 	\textbf{Récapitulatif des raccourcis}
 	\begin{itemize}
@@ -1346,7 +1509,7 @@ Introduction au montage photo avec GIMP}
 	\end{itemize}
 	\item \keys{{+}} : Zoom (+)
 	\item \keys{-} : Zoom(-)
-	\item \keys{1},\keys{2},\keys{3},\keys{4},\keys{5}, \keys{MAJ + 2}, \keys{MAJ + 3}, \keys{MAJ + 4}, \keys{MAJ + 5}  
+	%\item \keys{1},\keys{2},\keys{3},\keys{4},\keys{5}, \keys{MAJ + 2}, \keys{MAJ + 3}, \keys{MAJ + 4}, \keys{MAJ + 5}  
 	\item \keys{R} : Sélection rectangulaire 
 	\item \keys{E} : Sélection élliptique 
 	\item \keys{F} : Sélection libre
@@ -1357,16 +1520,7 @@ Introduction au montage photo avec GIMP}
 	\fbox{\url{http://www.gimpusers.com/gimp/hotkeys}}
 	\end{center}
 \end{frame}
-\end{comment}
-
-\begin{frame}{Quelques liens utiles}
-	\begin{itemize}
-		\item Documentation en français \url{https://docs.gimp.org/fr/}
-		\item Tutoriels en anglais \url{https://www.gimp.org/tutorials/}
-		\item Compilation de tutoriels en anglais \url{http://www.gimpology.com/}
-	\end{itemize}
-\end{frame}
-
+%\end{comment}
 
 %\begin{frame}
 %	G'MIC
