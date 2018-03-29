@@ -608,13 +608,45 @@ Introduction au montage photo avec GIMP}
 \end{enumerate}
 \end{frame}
 
-\begin{comment}
+
 \begin{frame}{Les outils de colloration}
 
 \textbf{Couleurs actives}
 
 
-\begin{overprint}
+%\begin{overprint}
+%\begin{figure}
+%	\centering
+%	\begin{tikzpicture}[scale=0.7, transform shape]
+%        \node[anchor=south west,inner sep=0] at (0.4,0) {\includegraphics[width=0.1\textwidth]{Images/gimp_couleurs_actives}};
+%        \onslide<2>{\draw[teal,ultra thick,rounded corners] (0.25,0.3) rectangle (1.5,1); 
+%        \node [anchor=center, teal] (note) at (0.7,1.4) {\Large Avant-plan \textcolor{black}{{\small (Clic \textbf{gauche})}}};}
+%	\onslide<3>{\draw[red,ultra thick,rounded corners] (0.6,0) rectangle (1.55,0.7);
+%        \node [anchor=center, red] (Inner) at (0.7,-0.3) {\Large Arrière-plan \textcolor{black}{{\small (Clic \textbf{droit})}}};}
+%    	\end{tikzpicture} 
+%	\includegraphics[width=0.1\textwidth]{Images/gimp_couleurs_actives}
+%\end{figure}
+
+%\vspace{-0.6cm}
+%\textbf{Palette des couleurs} Double clique sur l'une des couleurs actives
+
+
+%\begin{figure}
+%	\centering
+%	\begin{tikzpicture}[scale=1, transform shape]
+%        \node[anchor=south west,inner sep=0] at (0.4,0) {\includegraphics[width=0.4\textwidth]{Images/gimp_color_box}};
+
+%        \onslide<4>{\draw[red,ultra thick,rounded corners] (4.2,1.2) rectangle (4.6,1.6); 
+%        \node [anchor=center, red] (note) at (3.7,-0.3) {\Large Sélection \\de couleur};}
+%    \end{tikzpicture} 
+%	\includegraphics[width=0.1\textwidth]{Images/gimp_couleurs_actives}
+%\end{figure}
+
+
+%\end{overprint}
+
+
+%\begin{overprint}
 \begin{figure}
 	\centering
 	\begin{tikzpicture}[scale=0.7, transform shape]
@@ -624,10 +656,9 @@ Introduction au montage photo avec GIMP}
 	\onslide<3>{\draw[red,ultra thick,rounded corners] (0.6,0) rectangle (1.55,0.7);
         \node [anchor=center, red] (Inner) at (0.7,-0.3) {\Large Arrière-plan \textcolor{black}{{\small (Clic \textbf{droit})}}};}
     	\end{tikzpicture} 
-	%\includegraphics[width=0.1\textwidth]{Images/gimp_couleurs_actives}
 \end{figure}
 
-\vspace{-0.6cm}
+\vspace{-0.2cm}
 \textbf{Palette des couleurs} Double clique sur l'une des couleurs actives
 
 
@@ -637,15 +668,15 @@ Introduction au montage photo avec GIMP}
         \node[anchor=south west,inner sep=0] at (0.4,0) {\includegraphics[width=0.4\textwidth]{Images/gimp_color_box}};
 
         \onslide<4>{\draw[red,ultra thick,rounded corners] (4.2,1.2) rectangle (4.6,1.6); 
-        \node [anchor=center, red] (note) at (3.7,-0.3) {\Large Sélection \\de couleur};}
-    \end{tikzpicture} 
-	%\includegraphics[width=0.1\textwidth]{Images/gimp_couleurs_actives}
+        \node [anchor=center, red] (note) at (3.7,-0.4) {\Large Sélection de couleur};}
+    	\end{tikzpicture} 
 \end{figure}
-\end{overprint}
+%\end{overprint}
+
 
 
 \end{frame}
-\end{comment}
+
 
 \begin{frame}{Les outils de colloration}
 \begin{minipage}[t]{0.49\textwidth}
@@ -682,6 +713,7 @@ Introduction au montage photo avec GIMP}
 
 \begin{frame}[allowframebreaks]{Les outils de colloration}
 	
+	\begin{itemize}
 	\tool{Sélection de couleur}{O}{colorProbe.png}
 	
 	\vspace{0.5cm}
@@ -713,6 +745,7 @@ Introduction au montage photo avec GIMP}
 	
 	
 	Tracer des \textbf{lignes droites} : \textbf{Majuscule enfoncée} entre deux points sélectionnés
+	\end{itemize}
 \end{frame}
 
 %\begin{frame}{L'outil de texte}
@@ -747,7 +780,7 @@ Introduction au montage photo avec GIMP}
         	\centering
         	\includegraphics[width=0.3\textwidth]{Images/Scale.png} 
         \end{figure}
-D
+
 	\vspace{0.3cm}	
 	
 	\item Zone de \textbf{"Communication} dans le \textit{coin inférieur droit}
