@@ -629,16 +629,16 @@ Introduction au montage photo avec GIMP}
 \textbf{Palette des couleurs} Double clique sur l'une des couleurs actives
 
 
-%\begin{figure}
-%	\centering
-%	\begin{tikzpicture}[scale=1, transform shape]
-%        \node[anchor=south west,inner sep=0] at (0.4,0) {\includegraphics[width=0.4\textwidth]{Images/gimp_color_box}};
-%
-%        \onslide<4>{\draw[red,ultra thick,rounded corners] (4.2,1.2) rectangle (4.6,1.6); 
-%        \node [anchor=center, red] (note) at (3.7,0.5) {\Large Sélection \\de couleur};}
-%    \end{tikzpicture} 
-%	\includegraphics[width=0.1\textwidth]{Images/gimp_couleurs_actives}
-%\end{figure}
+\begin{figure}
+	\centering
+	\begin{tikzpicture}[scale=1, transform shape]
+        \node[anchor=south west,inner sep=0] at (0.4,0) {\includegraphics[width=0.4\textwidth]{Images/gimp_color_box}};
+
+        \onslide<4>{\draw[red,ultra thick,rounded corners] (4.2,1.2) rectangle (4.6,1.6); 
+        \node [anchor=center, red] (note) at (3.7,-0.3) {\Large Sélection \\de couleur};}
+    \end{tikzpicture} 
+	%\includegraphics[width=0.1\textwidth]{Images/gimp_couleurs_actives}
+\end{figure}
 \end{overprint}
 
 \end{frame}
@@ -675,6 +675,42 @@ Introduction au montage photo avec GIMP}
 
 \end{frame}
 
+
+\begin{frame}[allowframebreaks]{Les outils de colloration}
+	
+	\tool{Sélection de couleur}{O}{colorProbe.png}
+	
+	\vspace{0.5cm}
+	\tool{Outil de remplissage}{Maj + B}{bucketFill.png}
+	
+	\tool{Crayon}{N}{pen.png}
+	
+	\tool{Pinceau}{P}{paintbrush.png}
+	
+	\tool{Aérograhe}{A}{aero.png}
+	
+
+	
+	\framebreak
+	\tool{Dégradé}{L}{colorTool2.png}
+	
+	\begin{minipage}{0.45\textwidth}
+	\begin{figure}
+        	\centering
+        	\includegraphics[width=\textwidth]{Images/degrade_ex.png} 
+	\end{figure}
+	\end{minipage}\hfill
+	\begin{minipage}{0.45\textwidth}
+	\begin{figure}
+        	\centering
+        	\includegraphics[width=\textwidth]{Images/degrade_ex2.png} 
+	\end{figure}
+	\end{minipage}
+	
+	
+	Tracer des \textbf{lignes droites} : \textbf{Majuscule enfoncée} entre deux points sélectionnés
+\end{frame}
+
 %\begin{frame}{L'outil de texte}
 
 %\end{frame}
@@ -699,29 +735,42 @@ Introduction au montage photo avec GIMP}
 \end{enumerate}
 \end{frame}
 
-\begin{frame}{Les mesures}
+\begin{frame}[allowframebreaks]{Les mesures}
 \begin{itemize}
 	\item \textbf{Echelle graduée} aux \textit{extrémités} de l'image
 	
 	\begin{figure}
         	\centering
         	\includegraphics[width=0.3\textwidth]{Images/Scale.png} 
+D
+	\vspace{0.3cm}	
+	
+	\item Zone de \textbf{"Communication} dans le \textit{coin inférieur droit}
+
+	\begin{figure}
+        	\centering
+        	\includegraphics[width=0.3\textwidth]{Images/commu.png} 
 	\end{figure}
 	
-	\item Outil de mesure \keys{Maj + M}
-	
+	\framebreak
+	\tool{Outil de mesure}{Maj + M}{measure.png}
 	\begin{minipage}{0.45\textwidth}
 	\begin{figure}
         	\centering
-        	\includegraphics[width=0.8\textwidth]{Images/Measure_2.png} 
+        	\includegraphics[width=\textwidth]{Images/gimp-logo.png} 
 	\end{figure}
 	\end{minipage}\hfill
 	\begin{minipage}{0.45\textwidth}
 	\begin{figure}
         	\centering
-        	\includegraphics[width=0.6\textwidth]{Images/Measure.png} 
+        	\includegraphics[width=\textwidth]{Images/measure_gimp.png} 
 	\end{figure}
 	\end{minipage}
+	
+	\begin{itemize}
+		\item \textbf{Maintenir} le clic gauche entre les deux zones de mesure
+		\item \textbf{Résultats} dans la zone \textit{inférieure droite} de l'écran
+	\end{itemize}
 \end{itemize}
 \end{frame}
 
