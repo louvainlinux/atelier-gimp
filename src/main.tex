@@ -15,6 +15,18 @@
 %\usepackage{hyperref}
 \captionsetup[figure]{labelformat=empty}
 
+\usepackage{graphicx,calc}
+\newlength\myheight
+\newlength\mydepth
+\settototalheight\myheight{Xygp}
+\settodepth\mydepth{Xygp}
+\setlength\fboxsep{0pt}
+\newcommand*\inlinegraphics[1]{%
+  \settototalheight\myheight{Xygp}%
+  \settodepth\mydepth{Xygp}%
+  \raisebox{-\mydepth}{\includegraphics[height=\myheight]{#1}}%
+}
+
 \usepackage[colorinlistoftodos]{todonotes}%disable=true
 
 \newcommand{\badet}{et}
@@ -62,9 +74,9 @@
 \institute{Louvain-li-Nux}
 \title{\textbf{Formation GIMP}\\
 Introduction au montage photo avec GIMP}
-\author{Adrien~\textsc{Couplet} \and Sébastien~\textsc{de Longueville} \and Laurent~\textsc{Ziegler}}
+\author{Adrien~\textsc{Couplet} \and Sébastien~\textsc{de Longueville} \and Laurent~\textsc{Ziegler} \and Noé~\textsc{Tihon} }
 
-\date{5 avril 2018}
+\date{29 novembre 2018}
 
 
 \begin{document}
@@ -112,6 +124,22 @@ Introduction au montage photo avec GIMP}
     GIMP est disponible pour Windows, Linux et macOS
     \vspace{1cm}\Large
     \fbox{\url{https://www.gimp.org/downloads/}}
+    \end{center}
+\end{frame}
+
+\begin{frame}{Mea Culpa}
+    \begin{center}
+    GIMP a été mis à jour il n'y a pas longtemps vers sa version 2.10.
+	Les changements sont plus techniques que visuels mais l'interface a un 
+	peu changé et certains slides gardent donc cette ancienne interface.
+	
+	\begin{figure}
+        \centering
+        \includegraphics[width=0.50\textwidth]{Images/28to210_icons}
+        \caption{Ancien et nouveau set d'icônes}
+    \end{figure} 
+	Pour plus d'infos sur ce qui a changé avec la mise à jour 2.10:
+    \fbox{\url{https://www.gimp.org/release-notes/gimp-2.10.html}}
     \end{center}
 \end{frame}
 
@@ -882,6 +910,31 @@ Introduction au montage photo avec GIMP}
 	\end{center}
 \end{frame}
 
+
+
+\section{La modification non-destructrice}
+	\begin{frame}{La modification non-destructrice}
+	\framesubtitle{A quoi ça sert?}
+	\begin{itemize}
+		\item On peut revenir en arrière après avoir enregistré et rouvert son fichier
+		\item Plus de possibilité de réparer ses erreurs
+		\item Plus de possibilité de ne pas avoir à recommencer depuis le début...
+		\item On évite les pertes d'information liées à la compression (jpeg par exemple)
+	\end{itemize}		
+	\end{frame}
+
+	\begin{frame}{La modification non-destructrice}
+	\framesubtitle{Comment ça fonctionne?}
+	Le logiciel ne va plus directement altérer les pixels, mais enregistrer les modifications dans des fichiers annexes ou dans le document même (le format .xcf, pour gimp).
+	\begin{itemize}
+	\item On va utiliser au maximum les calques, quitte à en abuser
+	\item Lâcher la gomme au profit des masques
+	\item Appliquer localement les modifications avec les deux premiers points
+	\end{itemize}		
+	\end{frame}
+
+
+
 %%% MASQUES de FUSION%%
 \section{Masques de Fusion}
 	\begin{frame}{Masques de Fusion}
@@ -939,6 +992,8 @@ Introduction au montage photo avec GIMP}
 		\end{figure}
 	
 	\end{frame}		
+
+
 
 	\begin{frame}{Masques de Fusion}
 	\begin{overprint}
@@ -1076,7 +1131,7 @@ Introduction au montage photo avec GIMP}
 \section{Filtres}
 	\begin{frame}{Filtres}
 		\begin{itemize}
-			\item S'appliquent sur un calque ou un masque
+			\item S'appliquent sur un calque, un groupe de calques ou un masque
 			\item Gestion 
 				\begin{itemize}
 				\item du flou
@@ -1333,7 +1388,7 @@ Introduction au montage photo avec GIMP}
 	\begin{frame}{Texte Avancé}
 		\textbf{Que peut-on faire avec l'outil texte?}		
 
-		Une multitude de choses! Il y a une infinité de possibilités mais n'allons en aborder que quelques-unes.
+		Une multitude de choses! Il y a une infinité de possibilités mais nous n'allons en aborder que quelques-unes.
 		\begin{itemize}
 			\item Projeter une ombre sous le texte
 			\item Faire un texte ondulé
@@ -1343,6 +1398,22 @@ Introduction au montage photo avec GIMP}
 		
 		On peut appliquer des filtres et des vatriations de couleurs à tous les textes et même les transformer en calques s'il le faut!
 	\end{frame}
+
+\begin{frame}{Texte Avancé}
+	\framesubtitle{Présentation de l'outil}
+	\begin{figure}
+		\centering
+		\includegraphics[height=100px]{Images/text/text}
+	\end{figure}
+	On y retrouve:
+	\begin{itemize}
+	\item Le choix de la police ($\rightarrow$ clic gauche sur  \inlinegraphics{Images/text/font} )
+	\item La taille de la police
+	\item La justification
+	\item Etc
+	\end{itemize}
+\end{frame}
+
 
 
 \begin{frame}{Texte Avancé}
@@ -1486,86 +1557,19 @@ Introduction au montage photo avec GIMP}
 		\end{enumerate}
 \end{frame}
 
-
 \begin{frame}{Texte Avancé}
-	\framesubtitle{Remplir un texte avec une texture}
-		\begin{figure}[H]
-			\centering
-			\begin{minipage}{.5\textwidth}
-				\centering
-				\includegraphics[height=110px]{Images/text/2001_original} 
-				\end{minipage}$\rightarrow$%
-			\begin{minipage}{.5\textwidth}
-				\centering
-				\includegraphics[height=110px]{Images/text/2001_final} 
-				\end{minipage}
-			\end{figure}	
-\end{frame}
-
-\begin{frame}{Texte Avancé}
-	\framesubtitle{Remplir un texte avec une texture}
-	\begin{enumerate}
-\only<1>{
-	\item[1.] 	\textbf{Désaturer} notre image originale (Couleurs $\rightarrow$ Désaturer).
-	\begin{figure}
-			\centering
-			\includegraphics[height=150px]{Images/text/2001_1}
-			\end{figure}
-}
-\only<2>{
-	\item[2.]	\textbf{Postériser} le calque (Couleurs $\rightarrow$ Postériser). Ne garder que deux couleurs.
-\begin{figure}
-			\centering
-			\includegraphics[height=150px]{Images/text/2001_2}
-			\end{figure}
-}
-\only<3>{
-	\item[3.]	\textbf{Rajouter} l'arrière-plan.
-\begin{figure}
-			\centering
-			\includegraphics[height=150px]{Images/text/2001_3}
-			\end{figure}
-}
-\only<4>{
-	\item[4.]	\textbf{Dupliquer} le calque postérisé et le placer en dessous de l'arrière-plan.
-\begin{figure}
-			\centering
-			\includegraphics[height=150px]{Images/text/2001_4}
-			\end{figure}
-}
-\only<5>{
-	\item[5.]	\textbf{Masquer} la couleur noire sur le calque postérisé le plus haut.
-\begin{figure}
-			\centering
-			\includegraphics[height=150px]{Images/text/2001_5}
-			\end{figure}
-}
-\only<6>{
-	\item[6.]	\textbf{Insérer} le texte. Réduire l'espacement des lignes pour que l'arrière plan soit le plus visible possible et faire en sorte que le texte prenne toute la place de l'image.
-\begin{figure}
-			\centering
-			\includegraphics[height=150px]{Images/text/2001_6}
-			\end{figure}
-}
-\only<7>{
-	\item[7.]	\textbf{Sélectionner} le canal alpha du texte.
-\begin{figure}
-			\centering
-			\includegraphics[height=150px]{Images/text/2001_7}
-			\end{figure}
-}
-\only<8>{
-	\item[8.]	\textbf{Masquer} l'arrière plan avec la nouvelle sélection et cacher le calque de texte.
-\begin{figure}
-			\centering
-			\includegraphics[height=150px]{Images/text/2001_8}
-			\end{figure}
-}
-	
-	\end{enumerate}
+	Et si je veux appliquer plein d'autres trucs bizarres à mon texte; y créer des bordures, le remplir avec une image, etc?J'
 \end{frame}
 
 
+%exo : faire un meme
+
+%exo libre
+
+%ascii art
+
+
+%%%%%%%% APPENDIX %%%%%%%%
 \appendix 
 
 
@@ -1703,9 +1707,6 @@ Introduction au montage photo avec GIMP}
 	Opérations sur les couleurs (mentionner rapidement : niveaux, balances, seuils, saturation,...)
 \end{frame}
 
-\begin{frame}
-	Filtres et effets (ombres sous le texte,...)
-\end{frame}
 \end{comment}
 
 
