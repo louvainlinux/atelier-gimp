@@ -15,6 +15,7 @@
 %\usepackage{hyperref}
 \captionsetup[figure]{labelformat=empty}
 
+
 \usepackage{graphicx,calc}
 \newlength\myheight
 \newlength\mydepth
@@ -55,7 +56,7 @@
 
 \lstdefinestyle{nonumbers}
 {numbers=none}
-
+\usepackage{xmpmulti}
 % Pour rendre les toc plus compactes (pour éviter que ça déborde)
 \makeatletter
 \patchcmd{\beamer@sectionintoc}{\vskip1.5em}{\vskip0.5em}{}{}
@@ -1078,7 +1079,6 @@ Introduction au montage photo avec GIMP}
 			
 
 %% PURGES STALINIENNES %%
-\section{Enlever un élément de l'image}
 	\begin{frame}{Enlever un élément de l'image}
 	\begin{enumerate}
 	
@@ -1490,7 +1490,7 @@ Introduction au montage photo avec GIMP}
 			\end{figure}
 		}
 		\only<4>{
-			\item[3.] Sélectionner le nouveau chemin et le remplir dans un nouveau calque avec la couleur voulue. 		Dans ce cas-ci, "Tracer le chemin" n'en fera que le contour.
+			\item[3.] Sélectionner le nouveau chemin et le remplir dans un nouveau calque avec la couleur voulue. 		Dans ce cas-ci, "Tracer le chemin" n'en fera que le contour ($\rightarrow$ utile pour faire une bordure sur le texte, par contre).
 			\begin{figure}
 				\centering
 				\includegraphics[height=150px]{Images/text/courb4}
@@ -1508,6 +1508,20 @@ Introduction au montage photo avec GIMP}
 		\includegraphics[height=150px]{Images/text/courb5}
 	\end{figure}
 \end{frame}
+
+\begin{frame}{Texte Avancé}
+	Convertir le texte en tracés est très utile pour:
+	\begin{itemize}
+	\item Récupérer une sélection sur base d'un texte
+	\item Tracer des contours
+	\item Créer une masque sur base d'un texte
+	\item Transformer le texte pour le rendre plus facilement modulable
+	\item Moins de risques de pertes d'informations lors de l'export vers le format pdf, par exemple	
+	\item Modifier une police avec l'outil éditeur de chemins
+	\end{itemize}
+\end{frame}
+
+
 
 \begin{frame}{Texte Avancé}
 	\framesubtitle{Texte 3D}
@@ -1557,8 +1571,41 @@ Introduction au montage photo avec GIMP}
 		\end{enumerate}
 \end{frame}
 
-\begin{frame}{Texte Avancé}
-	Et si je veux appliquer plein d'autres trucs bizarres à mon texte; y créer des bordures, le remplir avec une image, etc?J'
+\begin{frame}{Exercice V}
+\framesubtitle{Faire un meme}
+Image de départ: \href{http://louvainlinux.github.io/atelier-gimp/src/Images/text/meme_template.png}{Lien de l'image}
+	\begin{figure}
+		\centering
+		\includegraphics[height=200px]{Images/text/meme}
+	\end{figure}
+\end{frame}
+
+\begin{frame}{Exercice V}
+\framesubtitle{Faire un meme}
+	Écrire le texte.
+	\begin{figure}
+		\centering
+		\includegraphics[width=0.90\textwidth]{Images/text/meme_txt}
+	\end{figure}
+\end{frame}
+
+\begin{frame}{Exercice V}
+\framesubtitle{Faire un meme}
+	Transformer le texte en chemin, remplir les chemins en blanc et leurs appliquer un contour noir sur un nouveau calque transparent.
+	\hfill
+	\begin{minipage}{.50\textwidth}
+	\begin{figure}
+		\centering
+		\includegraphics[width=0.95\textwidth]{Images/text/new_layer}
+	\end{figure}
+	\end{minipage}\hfill
+	\begin{minipage}{0.50\textwidth}
+	\begin{figure}
+		\centering
+		\includegraphics[width=0.95\textwidth]{Images/text/stroke_style}
+	\end{figure}
+	\end{minipage}	
+
 \end{frame}
 
 
@@ -1618,6 +1665,7 @@ Introduction au montage photo avec GIMP}
 %\end{frame}
 
 \begin{comment}
+\section{Comment}
 \begin{frame}
 	Le libre rapidement 
 	
