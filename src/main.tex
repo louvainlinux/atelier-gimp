@@ -37,7 +37,7 @@
 
 \newcommand{\tool}[3]{%
 	\begin{minipage}{0.40\textwidth}
-	\item #1	
+	\item #1
 	\end{minipage}\hfill
 	\begin{minipage}{0.20\textwidth}
 	\begin{flushright}
@@ -97,68 +97,68 @@ Introduction au montage photo avec GIMP}
 
 \section{Introduction}
 \begin{frame}[allowframebreaks]{Qu'est-ce que GIMP ?}
-    \begin{itemize}
-        \item GIMP = GNU Image Manipulation Program
-        \item Logiciel de traitement d'images matricielles
-        \item Alternative gratuite et libre à Adobe Photoshop
-    \end{itemize}
-    \begin{figure}
-        \centering
-        \includegraphics[width=0.5\textwidth]{Images/gimp-logo}
-        \caption{Wilber, la mascotte officielle de GIMP} 
-    \end{figure}
-    \framebreak
-    Liste non exhaustive des fonctionnalités de GIMP
-    \begin{itemize}
-        \item Gestion des calques;
-        \item Plusieurs outils de dessin;
-        \item Plusieurs outils de sélection;
-        \item Outils de transformation;
-        \item Une sélection de filtres;
-        \item Gestion de nombreux formats (JPEG, GIF, PNG, PSD, TIFF);
-        \item ...
-    \end{itemize}
+	\begin{itemize}
+	    \item GIMP = GNU Image Manipulation Program
+	    \item Logiciel de traitement d'images matricielles
+	    \item Alternative gratuite et libre à Adobe Photoshop
+	\end{itemize}
+	\begin{figure}
+	    \centering
+	    \includegraphics[width=0.5\textwidth]{Images/gimp-logo}
+	    \caption{Wilber, la mascotte officielle de GIMP} 
+	\end{figure}
+	\framebreak
+	Liste non exhaustive des fonctionnalités de GIMP
+	\begin{itemize}
+	    \item Gestion des calques;
+	    \item Plusieurs outils de dessin;
+	    \item Plusieurs outils de sélection;
+	    \item Outils de transformation;
+	    \item Une sélection de filtres;
+	    \item Gestion de nombreux formats (JPEG, GIF, PNG, PSD, TIFF);
+	    \item ...
+	\end{itemize}
 \end{frame}
 
 \begin{frame}{Installation}
-    \begin{center}
-    GIMP est disponible pour Windows, Linux et macOS
-    \vspace{1cm}\Large
-    \fbox{\url{https://www.gimp.org/downloads/}}
-    \end{center}
+	\begin{center}
+	GIMP est disponible pour Windows, Linux et macOS
+	\vspace{1cm}\Large
+	\fbox{\url{https://www.gimp.org/downloads/}}
+	\end{center}
 \end{frame}
 
 \begin{frame}{Mea Culpa}
-    \begin{center}
-    GIMP a été mis à jour il n'y a pas longtemps vers sa version 2.10.
+	\begin{center}
+	GIMP a été mis à jour il n'y a pas longtemps vers sa version 2.10.
 	Les changements sont plus techniques que visuels mais l'interface a un 
 	peu changé et certains slides gardent donc cette ancienne interface.
-	
+
 	\begin{figure}
-        \centering
-        \includegraphics[width=0.50\textwidth]{Images/28to210_icons}
-        \caption{Ancien et nouveau set d'icônes}
-    \end{figure} 
+	    \centering
+	    \includegraphics[width=0.50\textwidth]{Images/28to210_icons}
+	    \caption{Ancien et nouveau set d'icônes}
+	\end{figure} 
 	Pour plus d'infos sur ce qui a changé avec la mise à jour 2.10:
-    \fbox{\url{https://www.gimp.org/release-notes/gimp-2.10.html}}
-    \end{center}
+	\fbox{\url{https://www.gimp.org/release-notes/gimp-2.10.html}}
+	\end{center}
 \end{frame}
 
 \section{Présentation de l'interface et des outils}
 \begin{frame}[allowframebreaks]{L'interface}
-    \begin{figure}
-        \centering
-        \includegraphics[width=0.9\textwidth]{Images/gimp_multiple_windows}
-        \caption{L'interface multi-fenêtres}
-    \end{figure} 
-    \framebreak
-    \begin{center}
-        Fenêtres > Mode fenêtre unique
-        \begin{figure}
-            \includegraphics[width=0.9\textwidth]{Images/gimp_single_window}
-            \caption{L'interface fenêtre unique}
-        \end{figure}
-    \end{center}
+	\begin{figure}
+	    \centering
+	    \includegraphics[width=0.9\textwidth]{Images/gimp_multiple_windows}
+	    \caption{L'interface multi-fenêtres}
+	\end{figure} 
+	\framebreak
+	\begin{center}
+	    Fenêtres > Mode fenêtre unique
+	    \begin{figure}
+	        \includegraphics[width=0.9\textwidth]{Images/gimp_single_window}
+	        \caption{L'interface fenêtre unique}
+	    \end{figure}
+	\end{center}
 \end{frame}
 
 \begin{frame}{Créer/importer une image}
@@ -202,7 +202,7 @@ Introduction au montage photo avec GIMP}
 		\item \textbf{GIF}: support des animations, limité à 256 couleurs.
 	\end{itemize}
 	Un projet GIMP sera sauvegardé au format \textbf{XCF}, un format d'image libre qui contiendra les différents calques et paramètres de votre création.
-	
+
 	L'équivalent d'Adobe Photoshop est le format \textbf{PSD}.
 \end{frame}
 
@@ -236,7 +236,7 @@ Introduction au montage photo avec GIMP}
 		\includegraphics[width=0.3\textwidth]{Images/color_tool_0_settings}
 	\end{center}
 	L'outil permet de définir la couleur de premier plan, la couleur d'arrière-plan ou simplement d'ajouter la couleur à la palette.
-	
+
 	\framebreak
 	Le \textbf{pot de peinture} permet de remplir une zone.
 	\begin{center}
@@ -252,7 +252,7 @@ Introduction au montage photo avec GIMP}
 	\begin{scriptsize}
 	Exemple: image originale, remplissage noir avec seuil à 30, remplissage noir avec seuil à 60.
 	\end{scriptsize}
-	
+
 	\framebreak
 	L'outil de gradient permet de créer des dégradés entre la couleur de premier plan et celle d'arrière-plan.
 	\begin{center}
@@ -260,48 +260,48 @@ Introduction au montage photo avec GIMP}
 		\includegraphics[width=0.3\textwidth]{Images/color_tool_2_settings}
 	\end{center}
 	Il existe de nombreux modes et de nombreuses formes, n'hésitez pas à les essayer pour les découvrir. 
-	
+
 \end{frame}
 \end{comment}
 
 \begin{frame}[allowframebreaks]{Les outils}
-	
+
 	\begin{figure}
-        	\centering
-        	\includegraphics[width=0.4\textwidth]{Images/gimp_toolbox}
-        	\caption{La boîte à outils de GIMP} 
-    	\end{figure}
-	
+	    	\centering
+	    	\includegraphics[width=0.4\textwidth]{Images/gimp_toolbox}
+	    	\caption{La boîte à outils de GIMP} 
+		\end{figure}
+
 	\textbf{Accès}
-	
+
 	\begin{itemize}
 		\item Fenêtres > Boîte à outils
 		\item Outils > Boîte à outils
 	\end{itemize}
-	
+
 	\vspace{0.2cm}
 	\textbf{Raccourci} \keys{\ctrl + B}
-	
+
 	\framebreak
 	\textbf{Paramètres} \textit{double} cliquer sur l'icône de l'outil concerné
 	\begin{figure}
-        	\centering
-        	\includegraphics[width=0.4\textwidth]{Images/option_outil}
-        	\caption{Exemple : paramètres de l'outil de sélection} 
-    	\end{figure}
+	    	\centering
+	    	\includegraphics[width=0.4\textwidth]{Images/option_outil}
+	    	\caption{Exemple : paramètres de l'outil de sélection} 
+		\end{figure}
 
-\end{frame}	
+\end{frame}
 
 \begin{frame}[allowframebreaks]{Les outils de sélection}
 \begin{enumerate}
 
-	
+
 	\tool{Rectangulaire}{R}{rectangle.png}
-	
+
 	\vspace{0.5cm}
 	\begin{minipage}[t]{0.45\textwidth}
 	Options (\textit{fixé}) : 
-		
+	
 	\begin{itemize}
 		\item Position
 		\item Proportions fixées
@@ -310,22 +310,22 @@ Introduction au montage photo avec GIMP}
 	\end{itemize}
 	\end{minipage}
 	\begin{minipage}[t]{0.45\textwidth}
-	
+
 	\begin{figure}
-        	\centering
-        	\includegraphics[width=\textwidth]{Images/option_outil} 
+	    	\centering
+	    	\includegraphics[width=\textwidth]{Images/option_outil} 
 	\end{figure}
 	\end{minipage}
-	
+
 	\framebreak
-	
-	
-	\tool{Elliptique}{E}{ellipse.png}	
-	
+
+
+	\tool{Elliptique}{E}{ellipse.png}
+
 	\vspace{0.5cm}
 	\begin{minipage}[t]{0.45\textwidth}
 	Options (\textit{fixé}) : 
-		
+	
 	\begin{itemize}
 		\item Position
 		\item Proportions fixées
@@ -334,87 +334,87 @@ Introduction au montage photo avec GIMP}
 	\end{itemize}
 	\end{minipage}
 	\begin{minipage}[t]{0.45\textwidth}
-	
+
 	\begin{figure}
-        	\centering
-        	\includegraphics[width=\textwidth]{Images/option_outil} 
+	    	\centering
+	    	\includegraphics[width=\textwidth]{Images/option_outil} 
 	\end{figure}
 	\end{minipage}
-	
+
 	\framebreak 
-	
-	
-	
-	
+
+
+
+
 	\tool{Ciseaux intelligents}{I}{smart_cut.png}
-	
+
 	\begin{minipage}{0.45\textwidth}
 	\begin{figure}
-        	\centering
-        	\includegraphics[width=\textwidth]{Images/gimp-logo.png} 
+	    	\centering
+	    	\includegraphics[width=\textwidth]{Images/gimp-logo.png} 
 	\end{figure}
 	\end{minipage}\hfill
 	\begin{minipage}{0.45\textwidth}
 	\begin{figure}
-        	\centering
-        	\includegraphics[width=\textwidth]{Images/smart_ex.png} 
+	    	\centering
+	    	\includegraphics[width=\textwidth]{Images/smart_ex.png} 
 	\end{figure}
 	\end{minipage}
-	
+
 	\vspace{0.4cm}
 	\textbf{Attention} Une fois le contour terminé, cliquer au \textbf{centre} de celui-ci pour le valider
-	
+
 	\framebreak
-	
+
 	\tool{À main levée}{F}{freeSelect.png}
 
 	\begin{itemize}
 		\item \textbf{Trait continu} Maintenir le clic gauche 
 	\end{itemize}
-	
+
 		\begin{minipage}{0.45\textwidth}
 		\begin{figure}
-        		\centering
-        		\includegraphics[width=\textwidth]{Images/gimp-logo.png} 
+	    		\centering
+	    		\includegraphics[width=\textwidth]{Images/gimp-logo.png} 
 		\end{figure}
 		\end{minipage}\hfill
 		\begin{minipage}{0.45\textwidth}
 		\begin{figure}
-        		\centering
-        		\includegraphics[width=\textwidth]{Images/main_levee.png} 
+	    		\centering
+	    		\includegraphics[width=\textwidth]{Images/main_levee.png} 
 		\end{figure}
 		\end{minipage}
-		
-	\framebreak
 	
+	\framebreak
+
 	\setcounter{enumi}{3}
 	\tool{À main levée}{F}{freeSelect.png}
 
 	\begin{itemize}
 		\item \textbf{Point par point} Clic pour chaque point successif 
 	\end{itemize}
-	
+
 		\begin{minipage}{0.45\textwidth}
 		\begin{figure}
-        		\centering
-        		\includegraphics[width=\textwidth]{Images/gimp-logo.png} 
+	    		\centering
+	    		\includegraphics[width=\textwidth]{Images/gimp-logo.png} 
 		\end{figure}
 		\end{minipage}\hfill
 		\begin{minipage}{0.45\textwidth}
 		\begin{figure}
-        		\centering
-        		\includegraphics[width=\textwidth]{Images/point_point.png} 
+	    		\centering
+	    		\includegraphics[width=\textwidth]{Images/point_point.png} 
 		\end{figure}
 		\end{minipage}
+
 	
-		
-		\framebreak		
+		\framebreak	
 		\tool{Par couleur}{Maj + 0}{colorSelect}
-		
+	
 		\vspace{0.3cm}
 		\begin{minipage}[t]{0.55\textwidth}
 		Options : 
-		
+	
 		\begin{itemize}
 			\item Mode de sélection
 			\item Seuil
@@ -422,31 +422,31 @@ Introduction au montage photo avec GIMP}
 		\end{itemize}
 		\end{minipage}
 		\begin{minipage}[t]{0.35\textwidth}
-		
+	
 		\begin{figure}
-        		\centering
-        		\includegraphics[width=\textwidth]{Images/opt_color_select} 
+	    		\centering
+	    		\includegraphics[width=\textwidth]{Images/opt_color_select} 
 		\end{figure}
 		\end{minipage}
-		
+	
 		\framebreak
-		
+	
 		\setcounter{enumi}{4}
 		\tool{Par couleur}{Maj + 0}{colorSelect}
-		
+	
 		\begin{minipage}{0.45\textwidth}
 
 		\begin{figure}
-        		\centering
-        		\includegraphics[width=\textwidth]{Images/gimp-logo.png} 
-        		\caption{Figure originelle}
+	    		\centering
+	    		\includegraphics[width=\textwidth]{Images/gimp-logo.png} 
+	    		\caption{Figure originelle}
 		\end{figure}
 		\end{minipage}\hfill
 		\begin{minipage}{0.45\textwidth}
 		\begin{figure}
-        		\centering
-        		\includegraphics[width=\textwidth, trim = 0 0.22cm 0 0, clip]{Images/color_ex.png} 
-        		\caption{Zone sélectionnée (en \textbf{rouge})}
+	    		\centering
+	    		\includegraphics[width=\textwidth, trim = 0 0.22cm 0 0, clip]{Images/color_ex.png} 
+	    		\caption{Zone sélectionnée (en \textbf{rouge})}
 		\end{figure}
 		\end{minipage}
 
@@ -456,15 +456,15 @@ Introduction au montage photo avec GIMP}
 \begin{frame}{Les outils de sélection}
 \textbf{Paramètres de sélection}
 \begin{figure}
-        \centering
-        \includegraphics[width=0.4\textwidth]{Images/option_outil} 
+	    \centering
+	    \includegraphics[width=0.4\textwidth]{Images/option_outil} 
 \end{figure}
 
 \begin{enumerate}
 	\item \textbf{Remplacer} la sélection actuelle
 	\item \textbf{Ajouter} à la sélection actuelle
 	\item \textbf{Soustraire} à la sélection actuelle
-	\item \textbf{Intersection} avec la sélection actuelle	
+	\item \textbf{Intersection} avec la sélection actuelle
 \end{enumerate}
 \end{frame}
 
@@ -472,8 +472,8 @@ Introduction au montage photo avec GIMP}
 \textbf{Paramètres de sélection}
 \begin{overprint}
 \begin{figure}
-        \centering
-        \includegraphics[width=0.4\textwidth, trim = 0 6.3cm 0 0, clip]{Images/option_outil} 
+	    \centering
+	    \includegraphics[width=0.4\textwidth, trim = 0 6.3cm 0 0, clip]{Images/option_outil} 
 \end{figure}
 
 \begin{enumerate}
@@ -481,38 +481,38 @@ Introduction au montage photo avec GIMP}
 	\only<1>{
 	\item \textbf{Exemple}
 	\begin{figure}
-        	\centering
-        	\includegraphics[width=0.4\textwidth]{Images/Selec1.png} 
+	    	\centering
+	    	\includegraphics[width=0.4\textwidth]{Images/Selec1.png} 
 	\end{figure}}
-	
+
 	\only<2>{
 	\item[1] \textbf{Remplacer} la sélection actuelle
 	\begin{figure}
-        	\centering
-        	\includegraphics[width=0.4\textwidth]{Images/Selec5.png} 
+	    	\centering
+	    	\includegraphics[width=0.4\textwidth]{Images/Selec5.png} 
 	\end{figure}}
-	
-	\only<3>{	
+
+	\only<3>{
 	\item[2] \textbf{Ajouter} à la sélection actuelle
 	\begin{figure}
-        	\centering
-        	\includegraphics[width=0.4\textwidth]{Images/Selec2.png} 
+	    	\centering
+	    	\includegraphics[width=0.4\textwidth]{Images/Selec2.png} 
 	\end{figure}}
-	
+
 	\only<4>{
 	\item[3] \textbf{Soustraire} à la sélection actuelle
 	\begin{figure}
-        	\centering
-        	\includegraphics[width=0.4\textwidth]{Images/Selec3.png} 
+	    	\centering
+	    	\includegraphics[width=0.4\textwidth]{Images/Selec3.png} 
 	\end{figure}}
-	
+
 	\only<5>{
 	\item[4] \textbf{Intersection} avec la sélection actuelle
 	\begin{figure}
-        	\centering
-        	\includegraphics[width=0.4\textwidth]{Images/Selec4.png} 
+	    	\centering
+	    	\includegraphics[width=0.4\textwidth]{Images/Selec4.png} 
 	\end{figure}}
-	
+
 \end{enumerate}
 \end{overprint}
 \end{frame}
@@ -522,116 +522,116 @@ Introduction au montage photo avec GIMP}
 
 	\tool{Rotation}{Maj+R}{rotate.png}
 	\vspace{0.5cm}
-	
+
 	\begin{minipage}{0.45\textwidth}
 	\begin{figure}
-        	\centering
-        	\includegraphics[width=\textwidth]{Images/gimp-logo.png} 
+	    	\centering
+	    	\includegraphics[width=\textwidth]{Images/gimp-logo.png} 
 	\end{figure}
 	\end{minipage}\hfill
 	\begin{minipage}{0.45\textwidth}
 	\begin{figure}
-        	\centering
-        	\includegraphics[width=0.8\textwidth]{Images/Rotate.png} 
+	    	\centering
+	    	\includegraphics[width=0.8\textwidth]{Images/Rotate.png} 
 	\end{figure}
 	\end{minipage}
 	\framebreak
-	
+
 	\tool{Agrandissement/Réduction}{Maj+T}{rescale.png}
-	
+
 	\begin{minipage}{0.45\textwidth}
 	\begin{figure}
-        	\centering
-        	\includegraphics[width=\textwidth]{Images/gimp-logo.png} 
+	    	\centering
+	    	\includegraphics[width=\textwidth]{Images/gimp-logo.png} 
 	\end{figure}
 	\end{minipage}\hfill
 	\begin{minipage}{0.45\textwidth}
 	\begin{figure}
-        	\centering
-        	\includegraphics[width=\textwidth]{Images/redimension.png} 
+	    	\centering
+	    	\includegraphics[width=\textwidth]{Images/redimension.png} 
 	\end{figure}
 	\end{minipage}
 	\framebreak
-	
+
 	\tool{Inversion}{Maj+F}{flip.png}
-	
+
 	\begin{minipage}{0.45\textwidth}
 	\begin{figure}
-        	\centering
-        	\includegraphics[width=\textwidth]{Images/gimp-logo.png} 
+	    	\centering
+	    	\includegraphics[width=\textwidth]{Images/gimp-logo.png} 
 	\end{figure}
 	\end{minipage}\hfill
 	\begin{minipage}{0.45\textwidth}
 	\begin{figure}
-        	\centering
-        	\includegraphics[width=\textwidth]{Images/Flip.png} 
+	    	\centering
+	    	\includegraphics[width=\textwidth]{Images/Flip.png} 
 	\end{figure}
 	\end{minipage}
-	
+
 	\framebreak
-	\setcounter{enumi}{2}	
+	\setcounter{enumi}{2}
 	\tool{Inversion}{Maj+F}{flip.png}
-	
+
 	\begin{minipage}{0.45\textwidth}
 	\begin{figure}
-        	\centering
-        	\includegraphics[width=\textwidth]{Images/gimp-logo.png} 
+	    	\centering
+	    	\includegraphics[width=\textwidth]{Images/gimp-logo.png} 
 	\end{figure}
 	\end{minipage}\hfill
 	\begin{minipage}{0.45\textwidth}
 	\begin{figure}
-        	\centering
-        	\includegraphics[width=\textwidth]{Images/Flip2.png} 
+	    	\centering
+	    	\includegraphics[width=\textwidth]{Images/Flip2.png} 
 	\end{figure}
 	\end{minipage}
 	\framebreak
-	
+
 	\tool{Cisaillement}{Maj+S}{shear.png}
 	\vspace{0.5cm}
-	
+
 	\begin{minipage}{0.45\textwidth}
 	\begin{figure}
-        	\centering
-        	\includegraphics[width=0.8\textwidth]{Images/NoShear.png} 
+	    	\centering
+	    	\includegraphics[width=0.8\textwidth]{Images/NoShear.png} 
 	\end{figure}
 	\end{minipage}\hfill
 	\begin{minipage}{0.45\textwidth}
 	\begin{figure}
-        	\centering
-        	\includegraphics[width=0.8\textwidth]{Images/Shear.png} 
+	    	\centering
+	    	\includegraphics[width=0.8\textwidth]{Images/Shear.png} 
 	\end{figure}
 	\end{minipage}
 	\framebreak
-	
+
 	\tool{Mise en perspective}{Maj+R}{perspective.png}
 	\vspace{0.3cm}
-	
+
 	\begin{minipage}{0.45\textwidth}
 	\begin{figure}
-        	\centering
-        	\includegraphics[width=0.5\textwidth]{Images/FullTex.png} 
+	    	\centering
+	    	\includegraphics[width=0.5\textwidth]{Images/FullTex.png} 
 	\end{figure}
 	\end{minipage}\hfill
 	\begin{minipage}{0.45\textwidth}
 	\begin{figure}
-        	\centering
-        	\includegraphics[width=0.5\textwidth]{Images/Perspective.png} 
+	    	\centering
+	    	\includegraphics[width=0.5\textwidth]{Images/Perspective.png} 
 	\end{figure}
 	\end{minipage}
 	\framebreak
-	
+
 	\tool{Découpe}{Maj+C}{cutTool.png}
-	
+
 	\begin{minipage}{0.45\textwidth}
 	\begin{figure}
-        	\centering
-        	\includegraphics[width=\textwidth]{Images/gimp-logo.png} 
+	    	\centering
+	    	\includegraphics[width=\textwidth]{Images/gimp-logo.png} 
 	\end{figure}
 	\end{minipage}\hfill
 	\begin{minipage}{0.45\textwidth}
 	\begin{figure}
-        	\centering
-        	\includegraphics[width=0.6\textwidth]{Images/cut.png} 
+	    	\centering
+	    	\includegraphics[width=0.6\textwidth]{Images/cut.png} 
 	\end{figure}
 	\end{minipage}
 \end{enumerate}
@@ -679,12 +679,12 @@ Introduction au montage photo avec GIMP}
 \begin{figure}
 	\centering
 	\begin{tikzpicture}[scale=0.7, transform shape]
-        \node[anchor=south west,inner sep=0] at (0.4,0) {\includegraphics[width=0.1\textwidth]{Images/gimp_couleurs_actives}};
-        \onslide<2>{\draw[teal,ultra thick,rounded corners] (0.25,0.3) rectangle (1.5,1); 
-        \node [anchor=center, teal] (note) at (0.7,1.4) {\Large Avant-plan \textcolor{black}{{\small (Clic \textbf{gauche})}}};}
+	    \node[anchor=south west,inner sep=0] at (0.4,0) {\includegraphics[width=0.1\textwidth]{Images/gimp_couleurs_actives}};
+	    \onslide<2>{\draw[teal,ultra thick,rounded corners] (0.25,0.3) rectangle (1.5,1); 
+	    \node [anchor=center, teal] (note) at (0.7,1.4) {\Large Avant-plan \textcolor{black}{{\small (Clic \textbf{gauche})}}};}
 	\onslide<3>{\draw[red,ultra thick,rounded corners] (0.6,0) rectangle (1.55,0.7);
-        \node [anchor=center, red] (Inner) at (0.7,-0.3) {\Large Arrière-plan \textcolor{black}{{\small (Clic \textbf{droit})}}};}
-    	\end{tikzpicture} 
+	    \node [anchor=center, red] (Inner) at (0.7,-0.3) {\Large Arrière-plan \textcolor{black}{{\small (Clic \textbf{droit})}}};}
+		\end{tikzpicture} 
 \end{figure}
 
 \vspace{-0.2cm}
@@ -694,11 +694,11 @@ Introduction au montage photo avec GIMP}
 \begin{figure}
 	\centering
 	\begin{tikzpicture}[scale=1, transform shape]
-        \node[anchor=south west,inner sep=0] at (0.4,0) {\includegraphics[width=0.4\textwidth]{Images/gimp_color_box}};
+	    \node[anchor=south west,inner sep=0] at (0.4,0) {\includegraphics[width=0.4\textwidth]{Images/gimp_color_box}};
 
-        \onslide<4>{\draw[red,ultra thick,rounded corners] (4.2,1.2) rectangle (4.6,1.6); 
-        \node [anchor=center, red] (note) at (3.7,-0.4) {\Large Sélection de couleur};}
-    	\end{tikzpicture} 
+	    \onslide<4>{\draw[red,ultra thick,rounded corners] (4.2,1.2) rectangle (4.6,1.6); 
+	    \node [anchor=center, red] (note) at (3.7,-0.4) {\Large Sélection de couleur};}
+		\end{tikzpicture} 
 \end{figure}
 %\end{overprint}
 
@@ -710,22 +710,22 @@ Introduction au montage photo avec GIMP}
 \begin{frame}{Les outils de coloration}
 \begin{minipage}[t]{0.49\textwidth}
 	\textbf{Code HTML}
-	
+
 	\vspace{0.2cm}
 	Couleurs pré-définies
-	
+
 	\vspace{0.2cm}
-	
+
 	\begin{center}
 	\fbox{\parbox{0.7\linewidth}{%
-	\url{https://www.toutes-les-couleurs.com/code-couleur-html.php}	
+	\url{https://www.toutes-les-couleurs.com/code-couleur-html.php}
 	}}
 	\end{center}
 
 \end{minipage}\hfill
 \begin{minipage}[t]{0.49\textwidth}
 	\textbf{Code RGB}
-	
+
 	\begin{itemize}
 		\item[H] Teinte
 		\item[S] Valeur 
@@ -734,45 +734,45 @@ Introduction au montage photo avec GIMP}
 		\item[G] Vert 
 		\item[B] Bleu
 	\end{itemize}
-	
+
 \end{minipage}
 
 \end{frame}
 
 
 \begin{frame}[allowframebreaks]{Les outils de coloration}
-	
+
 	\begin{itemize}
 	\tool{Sélection de couleur}{O}{colorProbe.png}
-	
+
 	\vspace{0.5cm}
 	\tool{Outil de remplissage}{Maj + B}{bucketFill.png}
-	
-	\tool{Crayon}{N}{pen.png}
-	
-	\tool{Pinceau}{P}{paintbrush.png}
-	
-	\tool{Aérograhe}{A}{aero.png}
-	
 
-	
+	\tool{Crayon}{N}{pen.png}
+
+	\tool{Pinceau}{P}{paintbrush.png}
+
+	\tool{Aérograhe}{A}{aero.png}
+
+
+
 	\framebreak
 	\tool{Dégradé}{L}{colorTool2.png}
-	
+
 	\begin{minipage}{0.45\textwidth}
 	\begin{figure}
-        	\centering
-        	\includegraphics[width=\textwidth]{Images/degrade_ex.png} 
+	    	\centering
+	    	\includegraphics[width=\textwidth]{Images/degrade_ex.png} 
 	\end{figure}
 	\end{minipage}\hfill
 	\begin{minipage}{0.45\textwidth}
 	\begin{figure}
-        	\centering
-        	\includegraphics[width=\textwidth]{Images/degrade_ex2.png} 
+	    	\centering
+	    	\includegraphics[width=\textwidth]{Images/degrade_ex2.png} 
 	\end{figure}
 	\end{minipage}
-	
-	
+
+
 	Tracer des \textbf{lignes droites} : \textbf{majuscule enfoncée} entre deux points sélectionnés
 	\end{itemize}
 \end{frame}
@@ -784,56 +784,56 @@ Introduction au montage photo avec GIMP}
 \begin{frame}[allowframebreaks]{Autres outils}
 \begin{enumerate}
 	\tool{Zoom}{Z}{zoom.png}
-	
+
 	\textbf{Raccourci} \keys{{+}}, \keys{-}, \keys{1}, \keys{2}, \keys{3}, \keys{4} et \keys{5}
 	\vspace{0.6cm}
-	
+
 	\tool{Déplacement}{M}{moove.png}
-	
+
 	\framebreak
 	\tool{Alignement}{Q}{autopose.png}
-	
+
 	\begin{figure}
-        	\centering
-        	\includegraphics[width=0.3\textwidth]{Images/automoove_opt.png} 
+	    	\centering
+	    	\includegraphics[width=0.3\textwidth]{Images/automoove_opt.png} 
 	\end{figure}
-	
+
 \end{enumerate}
 \end{frame}
 
 \begin{frame}[allowframebreaks]{Les mesures}
 \begin{itemize}
 	\item \textbf{Echelle graduée} aux \textit{extrémités} de l'image
-	
-	\begin{figure}
-        	\centering
-        	\includegraphics[width=0.3\textwidth]{Images/Scale.png} 
-        \end{figure}
 
-	\vspace{0.3cm}	
-	
+	\begin{figure}
+	    	\centering
+	    	\includegraphics[width=0.3\textwidth]{Images/Scale.png} 
+	    \end{figure}
+
+	\vspace{0.3cm}
+
 	\item Zone de \textbf{"Communication"} dans le \textit{coin inférieur droit}
 
 	\begin{figure}
-        	\centering
-        	\includegraphics[width=0.3\textwidth]{Images/commu.png} 
+	    	\centering
+	    	\includegraphics[width=0.3\textwidth]{Images/commu.png} 
 	\end{figure}
-	
+
 	\framebreak
 	\tool{Outil de mesure}{Maj + M}{measure.png}
 	\begin{minipage}{0.45\textwidth}
 	\begin{figure}
-        	\centering
-        	\includegraphics[width=\textwidth]{Images/gimp-logo.png} 
+	    	\centering
+	    	\includegraphics[width=\textwidth]{Images/gimp-logo.png} 
 	\end{figure}
 	\end{minipage}\hfill
 	\begin{minipage}{0.45\textwidth}
 	\begin{figure}
-        	\centering
-        	\includegraphics[width=\textwidth]{Images/measure_gimp.png} 
+	    	\centering
+	    	\includegraphics[width=\textwidth]{Images/measure_gimp.png} 
 	\end{figure}
 	\end{minipage}
-	
+
 	\begin{itemize}
 		\item \textbf{Maintenir} le clic gauche entre les deux zones de mesure
 		\item \textbf{Résultats} dans la zone \textit{inférieure droite} de l'écran
@@ -843,23 +843,23 @@ Introduction au montage photo avec GIMP}
 
 \begin{frame}[allowframebreaks]{Les calques}
 	\begin{figure}
-        	\centering
-        	\includegraphics[width=0.3\textwidth]{Images/gimp_calques}
-        	%\caption{Fenêtre de calques de GIMP} 
-    	\end{figure}
-    	
-	\textbf{Accès} Fenêtres > Calques
+	    	\centering
+	    	\includegraphics[width=0.3\textwidth]{Images/gimp_calques}
+	    	%\caption{Fenêtre de calques de GIMP} 
+		\end{figure}
 	
+	\textbf{Accès} Fenêtres > Calques
+
 	\vspace{0.2cm}
 	\textbf{Raccourci} \keys{\ctrl + L}
-	
+
 	\framebreak
-	
+
 	\begin{figure}
-        	\centering
-        	\includegraphics[width=0.5\textwidth]{Images/Calque.jpg}
-    	\end{figure}
-	
+	    	\centering
+	    	\includegraphics[width=0.5\textwidth]{Images/Calque.jpg}
+		\end{figure}
+
 	\begin{itemize}
 		\item \textbf{Superposition} d'images
 		\begin{itemize}
@@ -869,8 +869,8 @@ Introduction au montage photo avec GIMP}
 		\item Visible ou non 
 		\item Ancrable
 		\item Indépendant
-	\end{itemize}	
-	
+	\end{itemize}
+
 	%\begin{enumerate}
 	%	\item Chaque calque s'utilises \textbf{Indépendemment}
 	%\end{enumerate}
@@ -921,7 +921,7 @@ Introduction au montage photo avec GIMP}
 		\item Plus de possibilité de réparer ses erreurs
 		\item Plus de possibilité de ne pas avoir à recommencer depuis le début...
 		\item On évite les pertes d'information liées à la compression (jpeg par exemple)
-	\end{itemize}		
+	\end{itemize}	
 	\end{frame}
 
 	\begin{frame}{La modification non-destructrice}
@@ -931,7 +931,7 @@ Introduction au montage photo avec GIMP}
 	\item On va utiliser au maximum les calques, quitte à en abuser
 	\item Lâcher la gomme au profit des masques
 	\item Appliquer localement les modifications avec les deux premiers points
-	\end{itemize}		
+	\end{itemize}	
 	\end{frame}
 
 
@@ -941,12 +941,12 @@ Introduction au montage photo avec GIMP}
 	\begin{frame}{Masques de Fusion}
 		Les masques de fusion permettent de cacher une certaine partie d'un calque.
 		$\Rightarrow$ Clic droit sur le calque $\rightarrow$ Add Layer Mask ...
-		
+	
 		Conseil: sélectionner d'abord la zone à masquer
 		\begin{center}
-			\begin{figure}		
-				\includegraphics[scale=.15]{Images/mask/mask1} 				
-			\end{figure}	
+			\begin{figure}	
+				\includegraphics[scale=.15]{Images/mask/mask1} 			
+			\end{figure}
 		\end{center}
 	\end{frame}
 
@@ -958,16 +958,16 @@ Introduction au montage photo avec GIMP}
 		\end{itemize}
 		\begin{center}
 			\begin{figure}
-				\includegraphics[scale=.15]{Images/mask/mask3}		
+				\includegraphics[scale=.15]{Images/mask/mask3}	
 			\end{figure}
 		\end{center}
 	\end{frame}
-	
+
 	\begin{frame}{Masques de Fusion}
 		"Mais ça a l'air super compliqué! Pourquoi j'utiliserais ça et pas ma gomme?"
-		
+	
 		Et bien, pour transformer ceci...
-		
+	
 		\begin{figure}[H]
 			\centering
 			\begin{minipage}{.5\textwidth}
@@ -979,29 +979,29 @@ Introduction au montage photo avec GIMP}
 				\includegraphics[height=100px]{Images/mask/Conference_Solvay_Original}
 			\end{minipage}
 		\end{figure}
-				
-		
-	\end{frame}		
+			
 	
+	\end{frame}	
+
 	\begin{frame}{Masques de Fusion}
 		... En ceci, sans trop se casser la tête car la gomme est "destructive".
-	
+
 		\begin{figure}[H]
 			\centering
 			\includegraphics[height=150px]{Images/mask/Conference_Solvay}
 			\caption{\scriptsize{1927 Solvay Conference on Quantum Mechanics.}}
 		\end{figure}
-	
-	\end{frame}		
+
+	\end{frame}	
 
 
 
 	\begin{frame}{Masques de Fusion}
 	\begin{overprint}
-	\begin{enumerate}	
-	\only<1>{		
+	\begin{enumerate}
+	\only<1>{	
 		\framesubtitle{Intégrer un élément dans un image}
-		
+	
 		\item[1.] \textbf{Sélectionner} la partie à intégrer et la masquer
 		\begin{figure}
 		\centering
@@ -1012,27 +1012,27 @@ Introduction au montage photo avec GIMP}
 			\begin{minipage}{.4\textwidth}
 				\centering
 				\includegraphics[height=100px]{Images/mask/mask4_2}
-			\end{minipage}	
+			\end{minipage}
 		\end{figure}}
-		
-	\only<2>{		
+	
+	\only<2>{	
 		\framesubtitle{Intégrer un élément dans un image}
-		
+	
 		\item[1.] \textbf{Sélectionner} la partie à intégrer et la masquer
 		\begin{figure}
 		\centering
 		\includegraphics[height=150px]{Images/mask/mask5}
 		\end{figure}}
 
-	\only<3>{		
+	\only<3>{	
 		\framesubtitle{Intégrer un élément dans un image}
-		
+	
 		\item[1.] \textbf{Sélectionner} la partie à intégrer et la masquer
 		\begin{figure}
 		\centering
 		\includegraphics[height=150px]{Images/mask/mask6}
 		\end{figure}}
-		
+	
 	\only<4>{
 		\framesubtitle{Intégrer un élément dans un image}
 
@@ -1044,7 +1044,7 @@ Introduction au montage photo avec GIMP}
 		\end{figure}
 	}
 	\only<5>{
-	
+
 		\item[4.] \textbf{Améliorer} le contour et régler les couleurs $\rightarrow$ Filtres \& Gestion des Couleurs
 			\begin{figure}
 		\centering
@@ -1053,15 +1053,15 @@ Introduction au montage photo avec GIMP}
 			\end{minipage}%
 			\begin{minipage}{.5\textwidth}
 				\includegraphics[height=100px]{Images/mask/mask8_2}
-			\end{minipage}	
+			\end{minipage}
 		\end{figure}
 	}
 
-		
-		
-		
-		
-		\end{enumerate}		
+	
+	
+	
+	
+		\end{enumerate}	
 
 	\end{overprint}
 	\end{frame}
@@ -1076,12 +1076,12 @@ Introduction au montage photo avec GIMP}
 	\end{center}
 	\end{frame}
 
-			
+		
 
 %% PURGES STALINIENNES %%
 	\begin{frame}{Enlever un élément de l'image}
 	\begin{enumerate}
-	
+
 	\only<1>{
 		\item[1.] \textbf{Dupliquer} le calque pour éviter d'endommager l'original et recouvrir la zone à éliminer avec le tampon de clonage
 		\begin{itemize}
@@ -1092,7 +1092,7 @@ Introduction au montage photo avec GIMP}
 			\begin{figure}
 				\includegraphics[scale=.15]{Images/purge/purge3} 
 			\end{figure}
-		\end{center}				
+		\end{center}			
 	}
 	\only<2>{
 
@@ -1101,15 +1101,15 @@ Introduction au montage photo avec GIMP}
 			\begin{figure}
 				\includegraphics[height=125px]{Images/purge/purge5} 
 			\end{figure}
-		\end{center}				
+		\end{center}			
 	}
-	
-	\end{enumerate}
-	
 
-	\end{frame}	
+	\end{enumerate}
+
+
+	\end{frame}
 	\begin{frame}{Exercice III}
-	
+
 		\begin{figure}[H]
 			\centering
 			\begin{minipage}{.5\textwidth}
@@ -1122,7 +1122,7 @@ Introduction au montage photo avec GIMP}
 				\includegraphics[height=125px]{Images/purge/Apollo_15_flag,_rover,_LM}
 				\caption{\tiny{Apollo 15 Lunar Module without James Irwin}}
 			\end{minipage}
-		\end{figure}	
+		\end{figure}
 	\end{frame}
 
 
@@ -1151,11 +1151,11 @@ Introduction au montage photo avec GIMP}
 			\item Automatiser une tâche fastidieuse (filtre film, fractales, par ex.)
 			\item Appliquer des effets à un calque (distorsions, transformations en peintures, par ex.)
 			\item Appliquer des corrections à un calque (pixellisation ou flou gaussien, par ex.)
-			\end{itemize}				
-	\end{frame}		
+			\end{itemize}			
+	\end{frame}	
 
 	\begin{frame}{Filtres}
-		\framesubtitle{Et donc, Jamy, comment on applique un filtre?}		
+		\framesubtitle{Et donc, Jamy, comment on applique un filtre?}	
 		Et bien c'est facile! Il suffit de: 
 		\begin{enumerate}
 			\item Dupliquer le calque sur lequel on va travailler
@@ -1164,8 +1164,8 @@ Introduction au montage photo avec GIMP}
 			\item Jouer avec les réglages du filtre et l'appliquer sur le calque
 		\end{enumerate}
 
-		Conseil: si on se rend compte qu'on n'a pas appliqué les bonnes options au filtre; il n'est pas nécessaire de tout recommencer depuis le début. Il suffit d'annuler ce qu'on vient de faire (Ctrl+Z ou "Edition $\rightarrow$ Annuler") et de réafficher le dernier (Maj+Ctrl+F ou "Filtres $\rightarrow$ Réafficher le dernier").		
-		
+		Conseil: si on se rend compte qu'on n'a pas appliqué les bonnes options au filtre; il n'est pas nécessaire de tout recommencer depuis le début. Il suffit d'annuler ce qu'on vient de faire (Ctrl+Z ou "Edition $\rightarrow$ Annuler") et de réafficher le dernier (Maj+Ctrl+F ou "Filtres $\rightarrow$ Réafficher le dernier").	
+	
 	\end{frame}
 
 \begin{frame}{Filtres}
@@ -1182,8 +1182,8 @@ Introduction au montage photo avec GIMP}
 				\includegraphics[height=120px]{Images/filters/astro1} 
 				\caption{Après application du filtre}
 			\end{minipage}
-		\end{figure}		
-\end{frame}		
+		\end{figure}	
+\end{frame}	
 
 
 	\begin{frame}{Filtres}
@@ -1198,88 +1198,88 @@ Introduction au montage photo avec GIMP}
 				\includegraphics[height=100px]{Images/filters/gaussBlur} 
 				\end{minipage}
 
-			\end{figure}		
+			\end{figure}	
 	\end{frame}
 
 
 \begin{frame}{Filtres}
 		Il existe une foule d'autres filtres, certains aux effets relativement discrets ou plus "spectaculaires":
-		
+	
 		\begin{figure}[H]
 			\centering
 				\includegraphics[height=150px]{Images/filters/compressed_original} 
 				\caption{\#NoFilter}
-			\end{figure}		
+			\end{figure}	
 	\end{frame}
 
 	\begin{frame}{Filtres}
 		Il existe une foule d'autres filtres, certains aux effets relativement discrets ou plus "spectaculaires":
-		
+	
 		\begin{figure}[H]
 			\centering
 				\includegraphics[height=150px]{Images/filters/motion_blur} 
 				\caption{Flou cinétique}
-			\end{figure}		
+			\end{figure}	
 	\end{frame}
 
 \begin{frame}{Filtres}
 		Il existe une foule d'autres filtres, certains aux effets relativement discrets ou plus "spectaculaires":
-		
+	
 		\begin{figure}[H]
-			\centering	
+			\centering
 				\includegraphics[height=150px]{Images/filters/pixelize} 
 				\caption{Pixélisé}
-			\end{figure}		
+			\end{figure}	
 	\end{frame}
 
 \begin{frame}{Filtres}
 		Il existe une foule d'autres filtres, certains aux effets relativement discrets ou plus "spectaculaires":
-		
+	
 		\begin{figure}[H]
 			\centering
 				\includegraphics[height=150px]{Images/filters/ripples} 
 				\caption{Vagues}
-\end{figure}		
+\end{figure}	
 	\end{frame}
 
 \begin{frame}{Filtres}
 		Il existe une foule d'autres filtres, certains aux effets relativement discrets ou plus "spectaculaires":
-		
+	
 		\begin{figure}[H]
 			\centering
 				\includegraphics[height=150px]{Images/filters/old} 
 				\caption{Vieille photo}
-\end{figure}		
+\end{figure}	
 	\end{frame}
 
 \begin{frame}{Filtres}
 		Il existe une foule d'autres filtres, certains aux effets relativement discrets ou plus "spectaculaires":
-		
+	
 		\begin{figure}[H]
 			\centering
 				\includegraphics[height=150px]{Images/filters/predator} 
 				\caption{Prédateurs}
-\end{figure}		
+\end{figure}	
 	\end{frame}
 
 \begin{frame}{Filtres}
 		Il existe une foule d'autres filtres, certains aux effets relativement discrets ou plus "spectaculaires":
-		
+	
 		\begin{figure}[H]
 			\centering
 				\includegraphics[height=150px]{Images/filters/photocopy} 
 				\caption{Photocopie}
-	\end{figure}		
+	\end{figure}	
 	\end{frame}
 
 \begin{frame}{Filtres}
 	Une liste des filtres de base (ainsi que des exemples) est disponible sur le lien suivant:
-	
+
 	\fbox{\footnotesize{\url{https://alvinalexander.com/design/gimp-catalog-filters-effects-examples-cheat-sheet}}}
 %	\fbox{\url{http://goldnuggetwebs.com/gimp-filters/index.html}}
-	
-%% le premier site me parait meilleur mais la box dépasse du slide. Je verrai comment régler ça une fois  les slides plus avancés - L.	
-	
+
+%% le premier site me parait meilleur mais la box dépasse du slide. Je verrai comment régler ça une fois  les slides plus avancés - L.
+
 \end{frame}
 
 
@@ -1295,10 +1295,10 @@ Introduction au montage photo avec GIMP}
 			\includegraphics[height=150px]{Images/colours/col1} 
 		\end{figure}
 	\end{frame}
-	
+
 	\begin{frame}{Gestion des Couleurs}
 		Noir \& blanc (simple) $\rightarrow$ Désaturer et gérer la luminosité et le contraste (basique).
-		
+	
 		Modifications des couleurs $\rightarrow$ \emph{Destructif} $\rightarrow$ Duplication des calques de travail
 
 		\begin{figure}
@@ -1306,9 +1306,9 @@ Introduction au montage photo avec GIMP}
 			\includegraphics[height=140px]{Images/colours/col2} 
 		\end{figure}
 	\end{frame}
-	
+
 	\begin{frame}{Gestion des Couleurs}
-	
+
 		\begin{figure}[H]
 			\centering
 			\begin{minipage}{.5\textwidth}
@@ -1319,14 +1319,14 @@ Introduction au montage photo avec GIMP}
 				\centering
 				\includegraphics[height=150px]{Images/colours/col4} 
 				\end{minipage}
-			\end{figure}		
-	\end{frame}	
-	
+			\end{figure}	
+	\end{frame}
+
 	\begin{frame}{Gestion des Couleurs}
 	\textbf{Et comment je peux faire pour changer la couleur d'un élément?}
 	Deux techniques:
 	\begin{enumerate}
-		\item Technique du calque coloré (facile et rapide à mettre en place)	
+		\item Technique du calque coloré (facile et rapide à mettre en place)
 		\item Technique des variations du la balance des blancs (plus précise mais aussi plus fastidieuse)
 	\end{enumerate}
 		\begin{figure}[H]
@@ -1339,8 +1339,8 @@ Introduction au montage photo avec GIMP}
 				\centering
 				\includegraphics[height=150px]{Images/colours/col6} 
 				\end{minipage}
-			\end{figure}			
-	\end{frame}		
+			\end{figure}		
+	\end{frame}	
 
 	\begin{frame}{Gestion des Couleurs}
 	\framesubtitle{Technique du calque coloré}
@@ -1358,11 +1358,11 @@ Introduction au montage photo avec GIMP}
 				\centering
 				\includegraphics[height=150px]{Images/colours/col8}
 			\end{figure}
-			}		
+			}	
 		\end{enumerate}
 
-			
-	\end{frame}		
+		
+	\end{frame}	
 
 	\begin{frame}{Gestion des Couleurs}
 	\framesubtitle{Par la variation de la balance des blancs}
@@ -1370,9 +1370,9 @@ Introduction au montage photo avec GIMP}
 		\begin{figure}[H]
 			\centering
 				\includegraphics[height=150px]{Images/colours/col9} 
-			\end{figure}			
-	\end{frame}	
-	
+			\end{figure}		
+	\end{frame}
+
 	\begin{frame}{Exercice IV}
 		À vous de jouer ! Changez la couleur de la combinaison comme dans l'exemple.
 		\begin{itemize}
@@ -1386,7 +1386,7 @@ Introduction au montage photo avec GIMP}
 %% TEXTE AVANCÉ %%
 \section{Texte Avancé}
 	\begin{frame}{Texte Avancé}
-		\textbf{Que peut-on faire avec l'outil texte?}		
+		\textbf{Que peut-on faire avec l'outil texte?}	
 
 		Une multitude de choses! Il y a une infinité de possibilités mais nous n'allons en aborder que quelques-unes.
 		\begin{itemize}
@@ -1395,7 +1395,7 @@ Introduction au montage photo avec GIMP}
 			\item Faire un texte en 3D
 			\item Remplir du texte avec une texture ou un fond
 		\end{itemize}
-		
+	
 		On peut appliquer des filtres et des variations de couleurs à tous les textes et même les transformer en calques s'il le faut!
 	\end{frame}
 
@@ -1462,7 +1462,7 @@ Introduction au montage photo avec GIMP}
 				\centering
 				\includegraphics[height=60px]{Images/text/courbf} 
 				\end{minipage}
-			\end{figure}	
+			\end{figure}
 \end{frame}
 
 \begin{frame}{Texte Avancé}
@@ -1480,7 +1480,7 @@ Introduction au montage photo avec GIMP}
 			\begin{figure}
 				\centering
 				\includegraphics[height=150px]{Images/text/courb2}
-			\end{figure}			
+			\end{figure}		
 		}
 		\only<3>{
 			\item[2.] Appliquer le texte sur le chemin (clic droit $\rightarrow$ Texte le long du chemin).
@@ -1516,7 +1516,7 @@ Introduction au montage photo avec GIMP}
 	\item Tracer des contours
 	\item Créer une masque sur base d'un texte
 	\item Transformer le texte pour le rendre plus facilement modulable
-	\item Moins de risques de pertes d'informations lors de l'export vers le format pdf, par exemple	
+	\item Moins de risques de pertes d'informations lors de l'export vers le format pdf, par exemple
 	\item Modifier une police avec l'outil éditeur de chemins
 	\end{itemize}
 \end{frame}
@@ -1558,16 +1558,16 @@ Introduction au montage photo avec GIMP}
 			\centering
 			\includegraphics[height=150px]{Images/text/3D3}
 			\end{figure}
-		}		
+		}	
 		\only<4>{
 			\item[3.] \textbf{Modifier} la dynamique de la brosse.
 
-			Cocher "Couleur/Fondu" dans le tableau qui est apparu. Il suffit maintenant de tracer un trait avec la brosse (Maj + clic) pour avoir notre texte en 3D!			
+			Cocher "Couleur/Fondu" dans le tableau qui est apparu. Il suffit maintenant de tracer un trait avec la brosse (Maj + clic) pour avoir notre texte en 3D!		
 			\begin{figure}
 			\centering
 			\includegraphics[height=150px]{Images/text/3D4}
 			\end{figure}
-		}		
+		}	
 		\end{enumerate}
 \end{frame}
 
@@ -1604,7 +1604,7 @@ Image de départ: \href{http://louvainlinux.github.io/atelier-gimp/src/Images/te
 		\centering
 		\includegraphics[width=0.95\textwidth]{Images/text/stroke_style}
 	\end{figure}
-	\end{minipage}	
+	\end{minipage}
 
 \end{frame}
 
@@ -1653,7 +1653,7 @@ Image de départ: \href{http://louvainlinux.github.io/atelier-gimp/src/Images/te
 	\item \keys{F} : Sélection libre
 	\item \keys{Ctrl} (appuyé) = Sélection de couleur
 	\end{itemize}
-	
+
 	\begin{center}
 	\fbox{\url{http://www.gimpusers.com/gimp/hotkeys}}
 	\end{center}
@@ -1668,21 +1668,21 @@ Image de départ: \href{http://louvainlinux.github.io/atelier-gimp/src/Images/te
 \section{Comment}
 \begin{frame}
 	Le libre rapidement 
-	
+
 	Permet de faire plein de choses cool (et rapides)
-	
+
 	Audacity,...
 \end{frame}
 
 \begin{frame}
-	
+
 	\begin{enumerate}
 	\item Ouvrir une image : File/open ==> choisir l'image à ouvrir 
-	
+
 	Ou ... plus simple : faire glisser l'image sur l'environnement de travail
-	
+
 	\item Créer un nouveau projet ==> format .xcf
-	
+
 	\item Pour obtenier une image en format "commun" ==> File/Export as ==> choisir le nom de fichier et l'extension (.png, .jpeg, .pdf, .text, .gif, .ps, .psd(compatibilité photoshop),...)
 	\end{enumerate}
 \end{frame}
@@ -1693,16 +1693,16 @@ Image de départ: \href{http://louvainlinux.github.io/atelier-gimp/src/Images/te
 	\item Menu
 	\item Fenêtre d'outils 
 	\item Fenêtre de calques 
-	
+
 	\end{enumerate}
 	Environement ouvert (échelles, zone de travail)
 \end{frame}
 
 \begin{frame}
 	Outils : description générale
-	
+
 	Ctrl + B pour l'ouvrir (ou windows/Toolboxes)
-	
+
 	\begin{enumerate}
 	\item Double clique pour les paramètres
 	\end{enumerate} 
@@ -1710,23 +1710,23 @@ Image de départ: \href{http://louvainlinux.github.io/atelier-gimp/src/Images/te
 
 \begin{frame}
 	Outils : description par outil
-	
+
 	+ Raccourcis de l'outil
-	
+
 	+ Paramètres les plus courraments utilisés
 \end{frame}
 
 \begin{frame}
 	Crayon
-	
+
 	Majuscule maintenue + Clique ==> tracer une ligne droite 
 \end{frame}
 
 \begin{frame}
 	Layer manager 
-	
+
 	Ctrl + L (ou windows/Layers) pour l'ouvrir
-	
+
 	$\Rightarrow$ pour masquer, superposer, mettre à l'avant plan,... 
 	 
 	\begin{itemize}
@@ -1734,24 +1734,24 @@ Image de départ: \href{http://louvainlinux.github.io/atelier-gimp/src/Images/te
 		\item Texte 
 		%\item Filtre (déconseillé)
 	\end{itemize}
-	
+
 	Attention : modifications QUE sur les layers sélectionnés 
-	
+
 	+ Masque (= ...) 
 	\todo[inline]{exemple photo (layes cachés,...)}	 
 \end{frame}
 
 \begin{frame}
 	Selection editor (All, shrink, grow, invert,...)
-	
+
 	$\Rightarrow$ Clique droit/	Select/All,Invert,None,...
 \end{frame}
 
 \begin{frame}
 	Canaux (alpha et différentes couleurs)
-	
+
 	Canal alpha = ??
-	
+
 	Opérations sur les couleurs (mentionner rapidement : niveaux, balances, seuils, saturation,...)
 \end{frame}
 
