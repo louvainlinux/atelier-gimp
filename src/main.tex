@@ -139,21 +139,6 @@ Introduction au montage photo avec GIMP}
 	\end{center}
 \end{frame}
 
-\begin{frame}{Mea Culpa}
-	\begin{center}
-	GIMP a été mis à jour il n'y a pas longtemps vers sa version 2.10.
-	Les changements sont plus techniques que visuels mais l'interface a un 
-	peu changé et certains slides gardent donc cette ancienne interface.
-
-	\begin{figure}
-	    \centering
-	    \includegraphics[width=0.50\textwidth]{Images/28to210_icons}
-	    \caption{Ancien et nouveau set d'icônes}
-	\end{figure} 
-	Pour plus d'infos sur ce qui a changé avec la mise à jour 2.10:
-	\fbox{\url{https://www.gimp.org/release-notes/gimp-2.10.html}}
-	\end{center}
-\end{frame}
 
 \section{Présentation de l'interface et des outils}
 \begin{frame}{L'interface}
@@ -1020,11 +1005,11 @@ Introduction au montage photo avec GIMP}
 			\centering
 			\begin{minipage}{.5\textwidth}
 				\centering
-				\includegraphics[height=100px]{Images/purge/Apollo_15_flag,_rover,_LM,_Irwin}
-			\end{minipage}
+				\includegraphics[width=.9\textwidth]{Images/purge/Apollo_15_flag,_rover,_LM,_Irwin}
+			\end{minipage}%
 			\begin{minipage}{.5\textwidth}
 				\centering
-				\includegraphics[height=100px]{Images/mask/Conference_Solvay_Original}
+				\includegraphics[width=.9\textwidth]{Images/mask/Conference_Solvay_Original}
 			\end{minipage}
 		\end{figure}
 			
@@ -1056,7 +1041,7 @@ Introduction au montage photo avec GIMP}
 			\begin{minipage}{.6\textwidth}
 				\centering
 				\includegraphics[height=125px]{Images/mask/mask4}
-			\end{minipage}
+			\end{minipage}%
 			\begin{minipage}{.4\textwidth}
 				\centering
 				\includegraphics[height=100px]{Images/mask/mask4_2}
@@ -1097,10 +1082,10 @@ Introduction au montage photo avec GIMP}
 			\begin{figure}
 		\centering
 			\begin{minipage}{.5\textwidth}
-				\includegraphics[height=100px]{Images/mask/mask8}
-			\end{minipage}
+				\includegraphics[width=.9\textwidth]{Images/mask/mask8}
+			\end{minipage}%
 			\begin{minipage}{.5\textwidth}
-				\includegraphics[height=100px]{Images/mask/mask8_2}
+				\includegraphics[width=.9\textwidth]{Images/mask/mask8_2}
 			\end{minipage}
 		\end{figure}
 	}
@@ -1209,7 +1194,7 @@ Introduction au montage photo avec GIMP}
 				\item[]
 					\framesubtitle{Et donc, Jamy, comment on applique un filtre?}	
 						Et bien c'est très simple! Il suffit de: 
-						\begin{enumerate}
+						\begin{enumerate}[I]
 							\item Dupliquer le calque sur lequel on va travailler
 							\item Masquer le nouveau calque afin que seule la zone qu'on souhaite modifier soit touchée par le filtre
 							\item Accéder aux filtres par le menu ou un clic droit
@@ -1252,6 +1237,7 @@ Introduction au montage photo avec GIMP}
 				\includegraphics[height=100px]{Images/filters/gaussBlur} 
 				\end{minipage}
 
+Filtres $\rightarrow$ Flou $\rightarrow$ Flou gaussien
 			\end{figure}	
 	\end{frame}
 
@@ -1460,10 +1446,7 @@ Introduction au montage photo avec GIMP}
 
 \begin{frame}{Texte Avancé}
 	\framesubtitle{Présentation de l'outil}
-	\begin{figure}
-		\centering
-		\includegraphics[height=100px]{Images/text/text}
-	\end{figure}
+
 	On y retrouve:
 	\begin{itemize}
 	\item Le choix de la police ($\rightarrow$ clic gauche sur  \inlinegraphics{Images/text/font} )
@@ -1471,6 +1454,12 @@ Introduction au montage photo avec GIMP}
 	\item La justification
 	\item Etc
 	\end{itemize}
+	
+	\begin{figure}
+		\centering
+		\includegraphics[height=125px]{Images/text/text}
+	\end{figure}
+	
 \end{frame}
 
 
@@ -1483,7 +1472,7 @@ Introduction au montage photo avec GIMP}
 			\item[]			
 				\begin{figure}
 				\centering
-				\includegraphics[height=150px]{Images/text/ombre1}
+				\includegraphics[height=250px]{Images/text/ombre1}
 				\end{figure}
 		}	
 
@@ -1492,7 +1481,7 @@ Introduction au montage photo avec GIMP}
 				\textbf{Appliquer} un filtre d'ombre portée et modifier les paramètres comme on le souhaite.
 				\begin{figure}
 				\centering
-				\includegraphics[height=150px]{Images/text/ombre2}
+				\includegraphics[height=250px]{Images/text/ombre2}
 				\end{figure}
 		}
 		\only<3>{
@@ -1500,7 +1489,7 @@ Introduction au montage photo avec GIMP}
 				\textbf{Appliquer} un filtre d'ombre portée et modifier les paramètres comme on le souhaite.
 				\begin{figure}
 				\centering
-				\includegraphics[height=150px]{Images/text/ombre3}
+				\includegraphics[height=250px]{Images/text/ombre3}
 				\end{figure}
 		}
 	\end{itemize}
@@ -1579,55 +1568,6 @@ Introduction au montage photo avec GIMP}
 \end{frame}
 
 
-
-\begin{frame}{Texte Avancé}
-	\framesubtitle{Texte 3D}
-	\begin{figure}
-	\centering
-	\includegraphics[height=100px]{Images/text/3D1}
-	\end{figure}
-\end{frame}
-
-\begin{frame}{Texte Avancé}
-	\framesubtitle{Texte 3D}
-		\begin{enumerate}
-		\only<1>{
-			\item[1.] \textbf{Créer} une nouvelle image de 500 x 500 px. On y édite alors le texte que l'on souhaite transformer en 3D. Le texte ne peut dépasser ces dimensions! Il faut ensuite sélectionner le calque de texte avec l'outil déplacement (touche \textbf{M}) et le copier. Il devrait être disponible comme une brosse sous le terme de "Presse-papier".
-			\begin{figure}
-			\centering
-			\includegraphics[height=150px]{Images/text/3D01}
-			\end{figure}
-		}
-		\only<2>{
-			\item[2.] \textbf{Revenir} à l'image sur laquelle on souhaite avoir notre texte en 3D et sélectionner l'outil Brosse. On va devoir légèrement le modifier:
-			\begin{itemize}
-				\item Choisir le dégradé dans les "Options de couleur"
-				\item Mettre "l'Espacement" au minimum
-			\end{itemize}
-			\begin{figure}
-			\centering
-			\includegraphics[height=150px]{Images/text/3D2}
-			\end{figure}
-		}
-		\only<3>{
-			\item[3.] \textbf{Modifier} la dynamique de la brosse.
-			\begin{figure}
-			\centering
-			\includegraphics[height=150px]{Images/text/3D3}
-			\end{figure}
-		}	
-		\only<4>{
-			\item[3.] \textbf{Modifier} la dynamique de la brosse.
-
-			Cocher "Couleur/Fondu" dans le tableau qui est apparu. Il suffit maintenant de tracer un trait avec la brosse (Maj + clic) pour avoir notre texte en 3D!		
-			\begin{figure}
-			\centering
-			\includegraphics[height=150px]{Images/text/3D4}
-			\end{figure}
-		}	
-		\end{enumerate}
-\end{frame}
-
 \begin{frame}{Exercice V}
 \framesubtitle{Faire un meme}
 	\begin{overprint}
@@ -1655,18 +1595,19 @@ Introduction au montage photo avec GIMP}
 			\item[]
 				Transformer le texte en chemin, remplir les chemins en blanc et leurs appliquer un contour noir sur un nouveau calque transparent.
 				\hfill
-				\begin{minipage}{.50\textwidth}
-				\begin{figure}
-					\centering
-					\includegraphics[width=0.95\textwidth]{Images/text/new_layer}
-				\end{figure}
-				\end{minipage}\hfill
-				\begin{minipage}{0.50\textwidth}
-				\begin{figure}
-					\centering
-					\includegraphics[width=0.95\textwidth]{Images/text/stroke_style}
-				\end{figure}
-				\end{minipage}
+				
+				\begin{figure}[H]
+						\centering
+						\begin{minipage}{.5\textwidth}
+							\centering
+							\includegraphics[width=0.90\textwidth]{Images/text/new_layer}
+							\end{minipage}%
+						\begin{minipage}{.5\textwidth}
+							\centering
+							\includegraphics[width=0.90\textwidth]{Images/text/stroke_style}
+							\end{minipage}
+					\end{figure}
+
 		}
 	\end{itemize}
 	\end{overprint}
