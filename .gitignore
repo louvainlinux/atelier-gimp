@@ -294,3 +294,5 @@ $RECYCLE.BIN/
 # Windows shortcuts
 *.lnk
 
+# IDEs
+.idea/
